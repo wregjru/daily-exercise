@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\lianxi\\25.8.18\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B6AD92B6-8192-4494-AEA0-0F5F46D97B08}|25.8.18\\25.8.18.vcxproj|E:\\lianxi\\25.8.18\\25.8.18\\\u4E70\u679C\u6C41\u95EE\u9898.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B6AD92B6-8192-4494-AEA0-0F5F46D97B08}|25.8.18\\25.8.18.vcxproj|solutionrelative:25.8.18\\\u4E70\u679C\u6C41\u95EE\u9898.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6AD92B6-8192-4494-AEA0-0F5F46D97B08}|25.8.18\\25.8.18.vcxproj|E:\\lianxi\\25.8.18\\25.8.18\\\u4E00\u822C\u6C34\u4ED9\u82B1\u6570.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B6AD92B6-8192-4494-AEA0-0F5F46D97B08}|25.8.18\\25.8.18.vcxproj|solutionrelative:25.8.18\\\u4E00\u822C\u6C34\u4ED9\u82B1\u6570.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "\u4E00\u822C\u6C34\u4ED9\u82B1\u6570.c",
+              "DocumentMoniker": "E:\\lianxi\\25.8.18\\25.8.18\\\u4E00\u822C\u6C34\u4ED9\u82B1\u6570.c",
+              "RelativeDocumentMoniker": "25.8.18\\\u4E00\u822C\u6C34\u4ED9\u82B1\u6570.c",
+              "ToolTip": "E:\\lianxi\\25.8.18\\25.8.18\\\u4E00\u822C\u6C34\u4ED9\u82B1\u6570.c",
+              "RelativeToolTip": "25.8.18\\\u4E00\u822C\u6C34\u4ED9\u82B1\u6570.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-08-18T02:20:00.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "\u4E70\u679C\u6C41\u95EE\u9898.c",
+              "DocumentMoniker": "E:\\lianxi\\25.8.18\\25.8.18\\\u4E70\u679C\u6C41\u95EE\u9898.c",
+              "RelativeDocumentMoniker": "25.8.18\\\u4E70\u679C\u6C41\u95EE\u9898.c",
+              "ToolTip": "E:\\lianxi\\25.8.18\\25.8.18\\\u4E70\u679C\u6C41\u95EE\u9898.c",
+              "RelativeToolTip": "25.8.18\\\u4E70\u679C\u6C41\u95EE\u9898.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-08-18T00:57:16.544Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

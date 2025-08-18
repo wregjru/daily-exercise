@@ -28,6 +28,7 @@
     <ProjectGuid>{57ad2600-1859-4e9b-8207-2ba0a488fa3d}</ProjectGuid>
     <RootNamespace>之前的代码</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>之前的代码(扫雷和井字棋）</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

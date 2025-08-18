@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\lianxi\\daily-exercise\\\u4E4B\u524D\u7684\u4EE3\u7801\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{57AD2600-1859-4E9B-8207-2BA0A488FA3D}|\u4E4B\u524D\u7684\u4EE3\u7801\\\u4E4B\u524D\u7684\u4EE3\u7801.vcxproj|E:\\lianxi\\daily-exercise\\\u4E4B\u524D\u7684\u4EE3\u7801\\\u4E4B\u524D\u7684\u4EE3\u7801\\\u626B\u96F7.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{57AD2600-1859-4E9B-8207-2BA0A488FA3D}|\u4E4B\u524D\u7684\u4EE3\u7801\\\u4E4B\u524D\u7684\u4EE3\u7801.vcxproj|solutionrelative:\u4E4B\u524D\u7684\u4EE3\u7801\\\u626B\u96F7.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57AD2600-1859-4E9B-8207-2BA0A488FA3D}|\u4E4B\u524D\u7684\u4EE3\u7801\\\u4E4B\u524D\u7684\u4EE3\u7801.vcxproj|E:\\lianxi\\daily-exercise\\\u4E4B\u524D\u7684\u4EE3\u7801\\\u4E4B\u524D\u7684\u4EE3\u7801\\\u4E95\u5B57\u68CB.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{57AD2600-1859-4E9B-8207-2BA0A488FA3D}|\u4E4B\u524D\u7684\u4EE3\u7801\\\u4E4B\u524D\u7684\u4EE3\u7801.vcxproj|solutionrelative:\u4E4B\u524D\u7684\u4EE3\u7801\\\u4E95\u5B57\u68CB.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "\u626B\u96F7.c",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\\u4E4B\u524D\u7684\u4EE3\u7801\\\u4E4B\u524D\u7684\u4EE3\u7801\\\u626B\u96F7.c",
+              "RelativeDocumentMoniker": "\u4E4B\u524D\u7684\u4EE3\u7801\\\u626B\u96F7.c",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\\u4E4B\u524D\u7684\u4EE3\u7801\\\u4E4B\u524D\u7684\u4EE3\u7801\\\u626B\u96F7.c",
+              "RelativeToolTip": "\u4E4B\u524D\u7684\u4EE3\u7801\\\u626B\u96F7.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-08-18T10:58:52.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "\u4E95\u5B57\u68CB.c",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\\u4E4B\u524D\u7684\u4EE3\u7801\\\u4E4B\u524D\u7684\u4EE3\u7801\\\u4E95\u5B57\u68CB.c",
+              "RelativeDocumentMoniker": "\u4E4B\u524D\u7684\u4EE3\u7801\\\u4E95\u5B57\u68CB.c",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\\u4E4B\u524D\u7684\u4EE3\u7801\\\u4E4B\u524D\u7684\u4EE3\u7801\\\u4E95\u5B57\u68CB.c",
+              "RelativeToolTip": "\u4E4B\u524D\u7684\u4EE3\u7801\\\u4E95\u5B57\u68CB.c",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-08-18T10:55:03.372Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

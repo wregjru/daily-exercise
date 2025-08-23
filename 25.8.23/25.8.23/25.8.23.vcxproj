@@ -21,6 +21,8 @@
   <ItemGroup>
     <ClCompile Include="模拟实现strstr函数.c" />
     <ClCompile Include="strtok函数.c" />
+    <ClCompile Include="数字替换.c" />
+    <ClCompile Include="memmove模拟实现.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

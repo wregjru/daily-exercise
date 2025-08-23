@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "E:\\lianxi\\daily-exercise\\25.8.23\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1659C703-737F-4ABF-90F3-2733AF108961}|25.8.23\\25.8.23.vcxproj|E:\\lianxi\\daily-exercise\\25.8.23\\25.8.23\\\u6570\u5B57\u66FF\u6362.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1659C703-737F-4ABF-90F3-2733AF108961}|25.8.23\\25.8.23.vcxproj|solutionrelative:25.8.23\\\u6570\u5B57\u66FF\u6362.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1659C703-737F-4ABF-90F3-2733AF108961}|25.8.23\\25.8.23.vcxproj|E:\\lianxi\\daily-exercise\\25.8.23\\25.8.23\\\u6A21\u62DF\u5B9E\u73B0strstr\u51FD\u6570.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1659C703-737F-4ABF-90F3-2733AF108961}|25.8.23\\25.8.23.vcxproj|solutionrelative:25.8.23\\\u6A21\u62DF\u5B9E\u73B0strstr\u51FD\u6570.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1659C703-737F-4ABF-90F3-2733AF108961}|25.8.23\\25.8.23.vcxproj|E:\\lianxi\\daily-exercise\\25.8.23\\25.8.23\\memmove\u6A21\u62DF\u5B9E\u73B0.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1659C703-737F-4ABF-90F3-2733AF108961}|25.8.23\\25.8.23.vcxproj|solutionrelative:25.8.23\\memmove\u6A21\u62DF\u5B9E\u73B0.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1659C703-737F-4ABF-90F3-2733AF108961}|25.8.23\\25.8.23.vcxproj|E:\\lianxi\\daily-exercise\\25.8.23\\25.8.23\\strtok\u51FD\u6570.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -22,20 +30,46 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "memmove\u6A21\u62DF\u5B9E\u73B0.c",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.8.23\\25.8.23\\memmove\u6A21\u62DF\u5B9E\u73B0.c",
+              "RelativeDocumentMoniker": "25.8.23\\memmove\u6A21\u62DF\u5B9E\u73B0.c",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.8.23\\25.8.23\\memmove\u6A21\u62DF\u5B9E\u73B0.c",
+              "RelativeToolTip": "25.8.23\\memmove\u6A21\u62DF\u5B9E\u73B0.c",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-08-23T07:41:31.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "\u6570\u5B57\u66FF\u6362.c",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.8.23\\25.8.23\\\u6570\u5B57\u66FF\u6362.c",
+              "RelativeDocumentMoniker": "25.8.23\\\u6570\u5B57\u66FF\u6362.c",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.8.23\\25.8.23\\\u6570\u5B57\u66FF\u6362.c",
+              "RelativeToolTip": "25.8.23\\\u6570\u5B57\u66FF\u6362.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-08-23T07:09:19.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "strtok\u51FD\u6570.c",
               "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.8.23\\25.8.23\\strtok\u51FD\u6570.c",
               "RelativeDocumentMoniker": "25.8.23\\strtok\u51FD\u6570.c",
               "ToolTip": "E:\\lianxi\\daily-exercise\\25.8.23\\25.8.23\\strtok\u51FD\u6570.c",
               "RelativeToolTip": "25.8.23\\strtok\u51FD\u6570.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-08-23T02:08:28.747Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "\u6A21\u62DF\u5B9E\u73B0strstr\u51FD\u6570.c",
               "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.8.23\\25.8.23\\\u6A21\u62DF\u5B9E\u73B0strstr\u51FD\u6570.c",
               "RelativeDocumentMoniker": "25.8.23\\\u6A21\u62DF\u5B9E\u73B0strstr\u51FD\u6570.c",

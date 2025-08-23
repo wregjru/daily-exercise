@@ -43,6 +43,6 @@
 //	struct a a1[] = { {"zhangsan",12} ,{ "lisi",13 } ,{ "wangwu",11 } };
 //	int sz = sizeof(a1) / sizeof(a1[0]);
 //	myqsort(a1, sz, sizeof(a1[0]), comp_age);
-//	return 0;
+//	return 0;//½áÊø
 //
 //}

@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="模拟实现arrarr函数.c" />
+    <ClCompile Include="模拟实现strstr函数.c" />
     <ClCompile Include="strtok函数.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

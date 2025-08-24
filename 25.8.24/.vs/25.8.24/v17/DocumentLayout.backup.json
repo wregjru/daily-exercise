@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\lianxi\\daily-exercise\\25.8.24\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6A74E73E-92D8-4CF2-A164-6EF211133D7B}|25.8.24\\25.8.24.vcxproj|E:\\lianxi\\daily-exercise\\25.8.24\\25.8.24\\\u6E90.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6A74E73E-92D8-4CF2-A164-6EF211133D7B}|25.8.24\\25.8.24.vcxproj|solutionrelative:25.8.24\\\u6E90.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A74E73E-92D8-4CF2-A164-6EF211133D7B}|25.8.24\\25.8.24.vcxproj|E:\\lianxi\\daily-exercise\\25.8.24\\25.8.24\\\u4E8C\u7EF4\u6570\u7EC4\u627E\u6570.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6A74E73E-92D8-4CF2-A164-6EF211133D7B}|25.8.24\\25.8.24.vcxproj|solutionrelative:25.8.24\\\u4E8C\u7EF4\u6570\u7EC4\u627E\u6570.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "\u6E90.c",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.8.24\\25.8.24\\\u6E90.c",
+              "RelativeDocumentMoniker": "25.8.24\\\u6E90.c",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.8.24\\25.8.24\\\u6E90.c*",
+              "RelativeToolTip": "25.8.24\\\u6E90.c*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowBAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-08-24T01:28:39.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "\u4E8C\u7EF4\u6570\u7EC4\u627E\u6570.c",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.8.24\\25.8.24\\\u4E8C\u7EF4\u6570\u7EC4\u627E\u6570.c",
+              "RelativeDocumentMoniker": "25.8.24\\\u4E8C\u7EF4\u6570\u7EC4\u627E\u6570.c",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.8.24\\25.8.24\\\u4E8C\u7EF4\u6570\u7EC4\u627E\u6570.c",
+              "RelativeToolTip": "25.8.24\\\u4E8C\u7EF4\u6570\u7EC4\u627E\u6570.c",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-08-24T01:11:00.782Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "E:\\lianxi\\daily-exercise\\25.8.24\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A74E73E-92D8-4CF2-A164-6EF211133D7B}|25.8.24\\25.8.24.vcxproj|E:\\lianxi\\daily-exercise\\25.8.24\\25.8.24\\\u6E90.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6A74E73E-92D8-4CF2-A164-6EF211133D7B}|25.8.24\\25.8.24.vcxproj|solutionrelative:25.8.24\\\u6E90.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{6A74E73E-92D8-4CF2-A164-6EF211133D7B}|25.8.24\\25.8.24.vcxproj|E:\\lianxi\\daily-exercise\\25.8.24\\25.8.24\\\u6768\u8F89\u4E09\u89D2.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6A74E73E-92D8-4CF2-A164-6EF211133D7B}|25.8.24\\25.8.24.vcxproj|solutionrelative:25.8.24\\\u6768\u8F89\u4E09\u89D2.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A74E73E-92D8-4CF2-A164-6EF211133D7B}|25.8.24\\25.8.24.vcxproj|E:\\lianxi\\daily-exercise\\25.8.24\\25.8.24\\\u4E8C\u7EF4\u6570\u7EC4\u627E\u6570.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -23,12 +23,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "\u6E90.c",
-              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.8.24\\25.8.24\\\u6E90.c",
-              "RelativeDocumentMoniker": "25.8.24\\\u6E90.c",
-              "ToolTip": "E:\\lianxi\\daily-exercise\\25.8.24\\25.8.24\\\u6E90.c*",
-              "RelativeToolTip": "25.8.24\\\u6E90.c*",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAowBAAAAACAAAAAAAAAA==",
+              "Title": "\u6768\u8F89\u4E09\u89D2.c",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.8.24\\25.8.24\\\u6768\u8F89\u4E09\u89D2.c",
+              "RelativeDocumentMoniker": "25.8.24\\\u6768\u8F89\u4E09\u89D2.c",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.8.24\\25.8.24\\\u6768\u8F89\u4E09\u89D2.c",
+              "RelativeToolTip": "25.8.24\\\u6768\u8F89\u4E09\u89D2.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-08-24T01:28:39.808Z",
               "EditorCaption": ""

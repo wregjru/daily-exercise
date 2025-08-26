@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "E:\\lianxi\\daily-exercise\\25.8.25\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A280D683-3B6A-42F4-9565-6F4D8E03E0EB}|25.8.25\\25.8.25.vcxproj|E:\\lianxi\\daily-exercise\\25.8.25\\25.8.25\\text.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A280D683-3B6A-42F4-9565-6F4D8E03E0EB}|25.8.25\\25.8.25.vcxproj|solutionrelative:25.8.25\\text.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A280D683-3B6A-42F4-9565-6F4D8E03E0EB}|25.8.25\\25.8.25.vcxproj|E:\\lianxi\\daily-exercise\\25.8.25\\25.8.25\\contact.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A280D683-3B6A-42F4-9565-6F4D8E03E0EB}|25.8.25\\25.8.25.vcxproj|solutionrelative:25.8.25\\contact.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A280D683-3B6A-42F4-9565-6F4D8E03E0EB}|25.8.25\\25.8.25.vcxproj|E:\\lianxi\\daily-exercise\\25.8.25\\25.8.25\\contact.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A280D683-3B6A-42F4-9565-6F4D8E03E0EB}|25.8.25\\25.8.25.vcxproj|solutionrelative:25.8.25\\contact.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A280D683-3B6A-42F4-9565-6F4D8E03E0EB}|25.8.25\\25.8.25.vcxproj|E:\\lianxi\\daily-exercise\\25.8.25\\25.8.25\\contact.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A280D683-3B6A-42F4-9565-6F4D8E03E0EB}|25.8.25\\25.8.25.vcxproj|solutionrelative:25.8.25\\contact.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A280D683-3B6A-42F4-9565-6F4D8E03E0EB}|25.8.25\\25.8.25.vcxproj|E:\\lianxi\\daily-exercise\\25.8.25\\25.8.25\\text.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A280D683-3B6A-42F4-9565-6F4D8E03E0EB}|25.8.25\\25.8.25.vcxproj|solutionrelative:25.8.25\\text.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "contact.h",
               "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.8.25\\25.8.25\\contact.h",
               "RelativeDocumentMoniker": "25.8.25\\contact.h",
               "ToolTip": "E:\\lianxi\\daily-exercise\\25.8.25\\25.8.25\\contact.h",
               "RelativeToolTip": "25.8.25\\contact.h",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-08-25T05:22:32.89Z",
               "EditorCaption": ""
@@ -45,20 +45,20 @@
               "RelativeDocumentMoniker": "25.8.25\\contact.c",
               "ToolTip": "E:\\lianxi\\daily-exercise\\25.8.25\\25.8.25\\contact.c",
               "RelativeToolTip": "25.8.25\\contact.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKIAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAKIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-08-25T05:23:17.961Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "text.c",
               "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.8.25\\25.8.25\\text.c",
               "RelativeDocumentMoniker": "25.8.25\\text.c",
               "ToolTip": "E:\\lianxi\\daily-exercise\\25.8.25\\25.8.25\\text.c",
               "RelativeToolTip": "25.8.25\\text.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-08-25T05:22:57.137Z",
               "EditorCaption": ""

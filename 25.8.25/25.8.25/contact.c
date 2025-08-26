@@ -1,18 +1,63 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include"contact.h"
-void initcontact(contact * pc)
+//静态版本
+//void initcontact(contact * pc)
+//{
+//	assert(pc);
+//	pc->count = 0;
+//	memset(pc->data, 0, sizeof(pc->data));
+//}
+//动态版本
+int initcontact(contact* pc)
 {
 	assert(pc);
 	pc->count = 0;
-	memset(pc->data, 0, sizeof(pc->data));
+	pc->data = (peoinfo*)calloc(3, sizeof(peoinfo));
+	pc->capacity = 3;
+	if (pc->data == NULL)
+	{
+		printf("%s\n", strerror(errno));
+		return 1;
+	}
+	return 0;
 }
-void addcount(contact * pc)
+//void addcount(contact * pc)
+//{
+//	assert(pc);
+//	if (pc->count == 100)
+//	{
+//		printf("太大了");
+//		return;
+//	}
+//	printf("输入名字:");
+//	scanf("%s", pc->data[pc->count].name);
+//	printf("输入年龄:");
+//	scanf("%d", &(pc->data[pc->count].age));
+//	printf("输入性别:");
+//	scanf("%s", pc->data[pc->count].sex);
+//	printf("输入电话:");
+//	scanf("%s", pc->data[pc->count].tele);
+//	printf("输入地址:");
+//	scanf("%s", pc->data[pc->count].addr);
+//	pc->count++;
+//	printf("成功\n");
+//}
+void addcount(contact* pc)
 {
 	assert(pc);
-	if (pc->count == 100)
+	if (pc->count == pc->capacity)
 	{
-		printf("太大了");
-		return;
+		peoinfo* ptr = (peoinfo*)realloc(pc->data,(pc->capacity + 1) * (sizeof(peoinfo)));
+		if (ptr == NULL)
+		{
+			printf("addcount:%s", strerror(errno));
+			return;
+		}
+		else
+		{
+			pc->data = ptr;
+			pc->capacity++;
+		}
 	}
 	printf("输入名字:");
 	scanf("%s", pc->data[pc->count].name);
@@ -111,4 +156,9 @@ void sortcontact(contact* pc)
 {
 	qsort(pc->data, pc->count, sizeof(peoinfo), comp_name);
 	printf("成功\n");
+}
+void descontact(contact* pc)
+{
+	free(pc->data);
+	pc->data = NULL;
 }

@@ -53,6 +53,7 @@ int main()
 			sortcontact(&con);
 			break;
 		case 0:
+			descontact(&con);
 			break;
 		default:
 			printf("ÖØÐÂÊäÈë");

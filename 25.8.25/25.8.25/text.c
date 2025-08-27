@@ -17,6 +17,7 @@ int main()
 	{
 		menu();
 		printf("Ñ¡Ôñ£º");
+		loadcontact(&con);
 		scanf("%d",&input);
 		switch (input)
 		{

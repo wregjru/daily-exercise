@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{A280D683-3B6A-42F4-9565-6F4D8E03E0EB}|25.8.25\\25.8.25.vcxproj|solutionrelative:25.8.25\\contact.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A280D683-3B6A-42F4-9565-6F4D8E03E0EB}|25.8.25\\25.8.25.vcxproj|E:\\lianxi\\daily-exercise\\25.8.25\\25.8.25\\text.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A280D683-3B6A-42F4-9565-6F4D8E03E0EB}|25.8.25\\25.8.25.vcxproj|solutionrelative:25.8.25\\text.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A280D683-3B6A-42F4-9565-6F4D8E03E0EB}|25.8.25\\25.8.25.vcxproj|E:\\lianxi\\daily-exercise\\25.8.25\\25.8.25\\contact.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A280D683-3B6A-42F4-9565-6F4D8E03E0EB}|25.8.25\\25.8.25.vcxproj|solutionrelative:25.8.25\\contact.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A280D683-3B6A-42F4-9565-6F4D8E03E0EB}|25.8.25\\25.8.25.vcxproj|E:\\lianxi\\daily-exercise\\25.8.25\\25.8.25\\text.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A280D683-3B6A-42F4-9565-6F4D8E03E0EB}|25.8.25\\25.8.25.vcxproj|solutionrelative:25.8.25\\text.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,13 +26,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "contact.h",
               "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.8.25\\25.8.25\\contact.h",
               "RelativeDocumentMoniker": "25.8.25\\contact.h",
               "ToolTip": "E:\\lianxi\\daily-exercise\\25.8.25\\25.8.25\\contact.h",
               "RelativeToolTip": "25.8.25\\contact.h",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAqwA8AAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-08-25T05:22:32.89Z",
               "EditorCaption": ""
@@ -45,20 +45,20 @@
               "RelativeDocumentMoniker": "25.8.25\\contact.c",
               "ToolTip": "E:\\lianxi\\daily-exercise\\25.8.25\\25.8.25\\contact.c",
               "RelativeToolTip": "25.8.25\\contact.c",
-              "ViewState": "AgIAAKMAAAAAAAAAAAAowLMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-08-25T05:23:17.961Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "text.c",
               "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.8.25\\25.8.25\\text.c",
               "RelativeDocumentMoniker": "25.8.25\\text.c",
               "ToolTip": "E:\\lianxi\\daily-exercise\\25.8.25\\25.8.25\\text.c",
               "RelativeToolTip": "25.8.25\\text.c",
-              "ViewState": "AgIAADQAAAAAAAAAAAAowDYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAowBgAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-08-25T05:22:57.137Z",
               "EditorCaption": ""

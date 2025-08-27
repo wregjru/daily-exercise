@@ -21,6 +21,38 @@ int initcontact(contact* pc)
 	}
 	return 0;
 }
+void loadcontact(contact* pc)
+{
+	FILE* pfread = fopen("text.txt", "rb");
+	if (pfread == NULL)
+	{
+		perror("loadcontact");
+		return;
+	}
+	peoinfo add = { 0 };
+	while (fread(&add, sizeof(peoinfo), 1, pfread) == 1)
+	{
+		assert(pc);
+		if (pc->count == pc->capacity)
+		{
+			peoinfo* ptr = (peoinfo*)realloc(pc->data, (pc->capacity + 1) * (sizeof(peoinfo)));
+			if (ptr == NULL)
+			{
+				printf("addcount:%s", strerror(errno));
+				return;
+			}
+			else
+			{
+				pc->data = ptr;
+				pc->capacity++;
+			}
+		}
+		pc->data[pc->count] = add;
+		pc->count++;
+	}
+	fclose(pfread);
+	pfread = NULL;
+}
 //void addcount(contact * pc)
 //{
 //	assert(pc);

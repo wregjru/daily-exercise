@@ -37,3 +37,4 @@ void modifycontact(contact*pc);
 void sortcontact(contact* pc);
 void descontact(contact* pc);
 void savecontact(contact* pc);
+void loadcontact(contact* pc);

@@ -162,3 +162,19 @@ void descontact(contact* pc)
 	free(pc->data);
 	pc->data = NULL;
 }
+void savecontact(contact* pc)
+{
+	assert(pc);
+	FILE* pfsave = fopen("text.txt", "wb");
+	if (pfsave == NULL)
+	{
+		perror("savecontact");
+		return;
+	}
+	for (int i = 0; i < pc->count; i++)
+	{
+		fwrite(pc->data+i, sizeof(peoinfo), 1, pfsave);
+	}
+	fclose(pfsave);
+	pfsave = NULL;
+}

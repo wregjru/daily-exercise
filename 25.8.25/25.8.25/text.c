@@ -53,6 +53,7 @@ int main()
 			sortcontact(&con);
 			break;
 		case 0:
+			savecontact(&con);
 			descontact(&con);
 			break;
 		default:

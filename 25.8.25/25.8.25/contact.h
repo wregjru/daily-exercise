@@ -36,3 +36,4 @@ int searchcontact(contact* pc, char name[]);
 void modifycontact(contact*pc);
 void sortcontact(contact* pc);
 void descontact(contact* pc);
+void savecontact(contact* pc);

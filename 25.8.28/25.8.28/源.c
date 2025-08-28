@@ -107,7 +107,7 @@
 //	printf("%d", all);
 //	return 0;
 //}
-#include <stdio.h>
+
 #include <stdlib.h>
 
 //int main() {
@@ -126,3 +126,186 @@
 //
 //    return 0;
 //}
+//int bofei(int x)
+//{
+//	if (x == 1)
+//		return 1;
+//	if (x == 2)
+//		return 1;
+//	x = bofei(x - 1) + bofei(x - 2);
+//	return x;
+//}
+//int main()
+//{
+//	int a = 0;
+//	scanf("%d", &a);
+//	int b = bofei(a);
+//	printf("%d", b);
+//	return 0;
+//}
+//int cheng(int num,int cifang)
+//{
+//	
+//	if (cifang == 1)
+//		return num;
+//	return num*cheng(num,cifang - 1);
+//}
+//int main()
+//{
+//	int num = 0;
+//	int cifang = 0;
+//	scanf("%d %d", &num, &cifang);//numµÄcifang´Î·½
+//	int all = cheng(num,cifang);
+//	printf("%d", all);
+//	return 0;
+//}
+//int jia(int a)
+//{
+//	if (a < 10)
+//		return a;
+//	return a % 10 + jia(a / 10);
+//}
+//int main()
+//{
+//	int a = 0;
+//	scanf("%d", &a);
+//	int b=jia(a);
+//	printf("%d", b);
+//	return 0;
+//}
+//int jiecheng(int a)
+//{
+//	if (a == 1)
+//		return 1;
+//	return a * jiecheng(a - 1);
+//}
+//int main()
+//{
+//	int a = 0;
+//	scanf("%d", &a);
+//	int b = jiecheng(a);
+//	printf("%d", b);
+//	return 0;
+//}
+//void dayin(int a)
+//{
+//	if (a < 10)
+//	{
+//		printf("%d ", a);
+//		return;
+//	}
+//	dayin(a / 10);
+//	printf("%d ", a % 10);
+//	
+//}
+//int main()
+//{
+//	int a = 0;
+//	scanf("%d", &a);
+//	dayin(a);
+//	return 0;
+//}
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	scanf("%d %d", &a, &b);
+//	a = (a + b) / 2;
+//	b = 2*a - b;
+//	a = a + a - b;
+//	printf("%d %d", a, b);
+//	return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int a = 0;
+//    int i = 0;
+//    scanf("%d", &a);
+//    while (a != 0)
+//    {
+//        a = a & (a - 1);
+//        i++;
+//
+//    }
+//    printf("%d", i);
+//    return 0;
+//}
+//#include <stdio.h>
+//int NumberOf1(int a)
+//{
+//    int i = 0;
+//
+//    while (a != 0)
+//    {
+//        a = a & (a - 1);
+//        i++;
+//
+//    }
+//    return i;
+//}
+//int main()
+//{
+//    int a, b;
+//    int c = 0;
+//    while (scanf("%d %d", &a, &b) != EOF)
+//    {
+//        c = a ^ b;
+//        int t = NumberOf1(c);
+//        printf("%d", 32-t);
+//
+//
+//
+//
+//    }
+//    return 0;
+//}
+//#include <stdio.h>
+//int i;
+//int main()
+//{
+//    i--;
+//    if (i > sizeof(i))
+//    {
+//        printf(">\n");
+//    }
+//    else
+//    {
+//        printf("<\n");
+//    }
+//    return 0;
+//}
+//int main()
+//{
+//	int arr[9] = { 1,2,3,4,5,1,2,3,4 };
+//	for (int i = 1; i < 6; i++)
+//	{
+//		int flag = 0;
+//		for (int j = 0; j < 9; j++)
+//		{
+//			if (i == arr[j])
+//			{
+//				flag++;
+//			}
+//		}
+//		if (flag == 1)
+//		{
+//			printf("%d", i);
+//		}
+//	}
+//	return 0;
+//}
+int main()
+{
+	int a = 999;
+	for (int i = 0; i < 32; i +=2)
+	{
+		printf("%d ",((a >> i) && 1));
+	}
+	printf("\n");
+	for (int i = 1; i < 32; i += 2)
+	{
+		printf("%d ", ((a >> i) && 1));
+	}
+	return 0;
+}

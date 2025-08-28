@@ -110,19 +110,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
-    int n = 13; 
-    int mid = n / 2; 
-
-    for (int i = 0; i < n; i++) {
-        int sp = abs(mid - i);
-        int st = n - 2 * sp;
-        for (int j = 0; j < sp; j++)
-            printf(" ");
-        for (int j = 0; j < st; j++)
-            printf("*");
-        printf("\n");
-    }
-
-    return 0;
-}
+//int main() {
+//    int n = 13; 
+//    int mid = n / 2; 
+//
+//    for (int i = 0; i < n; i++) {
+//        int sp = abs(mid - i);
+//        int st = n - 2 * sp;
+//        for (int j = 0; j < sp; j++)
+//            printf(" ");
+//        for (int j = 0; j < st; j++)
+//            printf("*");
+//        printf("\n");
+//    }
+//
+//    return 0;
+//}

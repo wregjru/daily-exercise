@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="hong.c" />
     <ClCompile Include="源.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

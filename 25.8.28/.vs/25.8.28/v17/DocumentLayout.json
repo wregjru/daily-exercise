@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\lianxi\\daily-exercise\\25.8.28\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CBD172EE-5281-4BBF-B7D6-C9F796101B9F}|25.8.28\\25.8.28.vcxproj|E:\\lianxi\\daily-exercise\\25.8.28\\25.8.28\\hong.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CBD172EE-5281-4BBF-B7D6-C9F796101B9F}|25.8.28\\25.8.28.vcxproj|solutionrelative:25.8.28\\hong.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CBD172EE-5281-4BBF-B7D6-C9F796101B9F}|25.8.28\\25.8.28.vcxproj|E:\\lianxi\\daily-exercise\\25.8.28\\25.8.28\\\u6E90.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{CBD172EE-5281-4BBF-B7D6-C9F796101B9F}|25.8.28\\25.8.28.vcxproj|solutionrelative:25.8.28\\\u6E90.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -20,39 +24,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "hong.c",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.8.28\\25.8.28\\hong.c",
+              "RelativeDocumentMoniker": "25.8.28\\hong.c",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.8.28\\25.8.28\\hong.c",
+              "RelativeToolTip": "25.8.28\\hong.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-08-28T07:14:31.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "\u4E00\u822C\u6C34\u4ED9\u82B1\u6570.c",
               "DocumentMoniker": "C:\\Users\\Administrato\\Desktop\\\u4E00\u822C\u6C34\u4ED9\u82B1\u6570.c",
               "ToolTip": "C:\\Users\\Administrato\\Desktop\\\u4E00\u822C\u6C34\u4ED9\u82B1\u6570.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-08-28T02:50:37.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-28T02:50:37.142Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "\u4E70\u679C\u6C41\u95EE\u9898.c",
               "DocumentMoniker": "C:\\Users\\Administrato\\Desktop\\\u4E70\u679C\u6C41\u95EE\u9898.c",
               "ToolTip": "C:\\Users\\Administrato\\Desktop\\\u4E70\u679C\u6C41\u95EE\u9898.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-08-28T02:44:25.807Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-28T02:44:25.807Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "\u6E90.c",
               "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.8.28\\25.8.28\\\u6E90.c",
               "RelativeDocumentMoniker": "25.8.28\\\u6E90.c",
               "ToolTip": "E:\\lianxi\\daily-exercise\\25.8.28\\25.8.28\\\u6E90.c",
               "RelativeToolTip": "25.8.28\\\u6E90.c",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAiwG0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAiwHAAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-08-28T02:44:19.579Z",
               "EditorCaption": ""

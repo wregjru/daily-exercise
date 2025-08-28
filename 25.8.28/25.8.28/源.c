@@ -295,17 +295,109 @@
 //	}
 //	return 0;
 //}
+//int main()
+//{
+//	int a = 999;
+//	for (int i = 0; i < 32; i +=2)
+//	{
+//		printf("%d ",((a >> i) && 1));
+//	}
+//	printf("\n");
+//	for (int i = 1; i < 32; i += 2)
+//	{
+//		printf("%d ", ((a >> i) && 1));
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//
+//int main()
+//{
+//    char arr[1001];
+//    int i = 0;
+//    while (scanf("%c", &arr[i]) != EOF)
+//    {
+//        i++;
+//
+//    }
+//    arr[i] = '\0';
+//    for (int j = i-1; j >= 0; j--)
+//        printf("%c", arr[j]);
+//    return 0;
+//}
+//void daoxu(char* arr, int sz)
+//{
+//	int left = 0;
+//	int right = sz - 1;
+//	int tmp = 0;
+//	while (left < right)
+//	{
+//		tmp = arr[left];
+//		arr[left] = arr[right];
+//		arr[right] = tmp;
+//		left++;
+//		right--;
+//	}
+//}
+//int main()
+//{
+//	char arr[4] = "ABCD";
+//	int sz = sizeof(arr);
+//	int k = 2;
+//	daoxu(arr, k);
+//	daoxu(arr + k, sz - k);
+//	daoxu(arr, sz);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%c", arr[i]);
+//	}
+//	return 0;
+//}
+//int my_strlen(char* arr)
+//{
+//	int i = 0;
+//	while (*(arr + i) != '\0')
+//	{
+//		i++;
+//	}
+//	return i;
+//}
+//int main()
+//{
+//	char arr[] = "asdfgjhkqw";
+//	int t = my_strlen(arr);
+//	printf("%d", t);
+//	return 0;
+//}
+
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#define all 10
 int main()
 {
-	int a = 999;
-	for (int i = 0; i < 32; i +=2)
+	int a[all] = { 1,2,3,4,5,6,7,8,9,11 };
+	int left = 0;
+	int right = all;
+	for (int i = 0; i < all; i++)
 	{
-		printf("%d ",((a >> i) && 1));
+		if ((a[i] % 2) == 0)
+		{
+			for (int j = all - 1; j > i; j--)
+			{
+				if ((a[j] % 2) != 0)
+				{
+					int h = 0;
+					h = a[i];
+					a[i] = a[j];
+					a[j] = h;
+
+				}
+			}
+		}
 	}
-	printf("\n");
-	for (int i = 1; i < 32; i += 2)
+	for (int t = 0; t < all; t++)
 	{
-		printf("%d ", ((a >> i) && 1));
+		printf("%d ", a[t]);
 	}
 	return 0;
 }

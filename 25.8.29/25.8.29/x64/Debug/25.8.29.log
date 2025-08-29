@@ -1,2 +1,4 @@
 ﻿  源.c
+E:\lianxi\daily-exercise\25.8.29\25.8.29\源.c(443,20): warning C4028: 形参 1 与声明不一致
+E:\lianxi\daily-exercise\25.8.29\25.8.29\源.c(443,32): warning C4028: 形参 2 与声明不一致
   25.8.29.vcxproj -> E:\lianxi\daily-exercise\25.8.29\x64\Debug\25.8.29.exe

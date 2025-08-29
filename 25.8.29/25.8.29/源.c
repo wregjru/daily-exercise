@@ -16,7 +16,7 @@
 //	return 0;
 //}
 #define _CRT_SECURE_NO_WARNINGS
-#include<stdio.h>
+
 //void bubble(int* arr, int sz)
 //{
 //	int tmp = 0;
@@ -259,51 +259,227 @@
 //	
 //	return 0;
 //}
-#include <stdio.h>
-int runnian(int x)
+//#include <stdio.h>
+//int runnian(int x)
+//{
+//    if (x / 100 == 0)
+//    {
+//        if (x / 400 == 0)
+//        {
+//            return 1;
+//        }
+//    }
+//    else
+//    {
+//        {
+//            if (x / 4 == 0)
+//                return 1;
+//        }
+//    }
+//    return 0;
+//}
+//int main() {
+//    int a, b;
+//    int n = 0;
+//    while (scanf("%d %d", &a, &b) != EOF)
+//    {
+//        if (runnian(a) == 1)
+//        {
+//            if (b == 2)
+//                n = 29;
+//
+//        }
+//        if (runnian(a) == 0)
+//        {
+//            if (b == 2)
+//                n = 28;
+//
+//        }
+//        if (b == 1 || b == 3 || b == 5 || b == 7 || b == 8 || b == 10 || b == 12)
+//        {
+//            n = 31;
+//        }
+//        if (b == 4 || b == 6 || b == 9 || b == 11)
+//        {
+//            n = 30;
+//        }
+//        printf("%d\n", n);
+//    }
+//    return 0;
+//}
+//#include<stdio.h>
+//#include<stdlib.h>
+//#include<string.h>
+//struct s
+//{
+//	char name[20];
+//	int age;
+//};
+//int com_age(const void* e1, const void* e2)
+//{
+//	return strcmp(((struct s*)e1)->name , ((struct s*)e2)->name);
+//	
+//}
+//int main()
+//{
+//	struct s people[] = { {"zhangsan",20},{"lisi",15},{"wangwu",18} };
+//	int sz = sizeof(people) / sizeof(people[0]);
+//	qsort(people, sz, sizeof(people[0]), com_age);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%s %d", people[i].name, people[i].age);
+//	}
+//	return 0;
+//}
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<assert.h>
+//struct s
+//{
+//	char name[20];
+//	int age;
+//};
+//int com_age(const void* e1, const void* e2)
+//{
+//	return strcmp(((struct s*)e1)->name, ((struct s*)e2)->name);
+//
+//}
+//void my_qsort(void* people, int sz, int size, int com_age(void* e1, void* e2))
+//{
+//	
+//	for (int i = 0; i < sz-1; i++)
+//	{
+//		for (int j = 0; j < sz - i - 1; j++)
+//		{
+//			if (com_age((char*)people + size * j, (char*)people + size * j + size)>0)
+//			{
+//				
+//				for (int k = 0; k < size; k++)
+//				{
+//					char tmp = *((char*)people + size * j + k);
+//					tmp = *((char*)people + size * j);
+//					*((char*)people + size * j) = *((char*)people + size * j + size);
+//					*((char*)people + size * j + size) = tmp;
+//
+//
+//
+//				}
+//			}
+//		}
+//	}
+//}
+//int main()
+//{
+//	struct s people[] = { {"zhangsan",20},{"lisi",15},{"wangwu",18} };
+//	int sz = sizeof(people) / sizeof(people[0]);
+//	my_qsort(people, sz, sizeof(people[0]), com_age);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%s %d", people[i].name, people[i].age);
+//	}
+//	return 0;
+//}
+//void my_strcpy(char*src, char*dest)
+//{
+//	assert(src);
+//	assert(dest);
+//    char* ret = dest; 
+//    while ((*dest++ = *src++) != '\0')
+//    {
+//        
+//    }
+//
+//	return ret;
+//}
+//int main()
+//{
+//	char src[] = "Hello, World!";
+//	char dest[20];
+//	my_strcpy(src, dest);
+//	printf("%s", dest);
+//	return 0;
+//}
+//void my_strcat(char* a1, char* a2)
+//{
+//	while (*a1 != '\0')
+//	{
+//		a1++;
+//	}
+//	while (( *a1++ =  *a2++) != '\0')
+//	{
+//		;
+//	}
+//}
+//int main()
+//{
+//	char a1[] = "hello";
+//	char a2[] = "world";
+//	my_strcat(a1, a2);
+//	printf("%s", a1);
+//	return 0;
+//}
+//int my_strcmp(char* arr1, char* arr2)
+//{
+//
+//	while (*arr1 != '\0'&& *arr2 != '\0'&&*arr1==*arr2)
+//	{
+//		arr1++;
+//		arr2++;
+//
+//
+//	}
+//
+//	return *(unsigned char*)arr1 - *(unsigned char*)arr2;
+//}
+//int main()
+//{
+//	char arr1[] = "asdf";
+//	char arr2[] = "asdg";
+//	int i=my_strcmp(arr1,arr2);
+//	printf("%d", i);
+//	return 0;
+//}
+char* strstr(char* arr1, char* arr2)
 {
-    if (x / 100 == 0)
-    {
-        if (x / 400 == 0)
-        {
-            return 1;
-        }
-    }
-    else
-    {
-        {
-            if (x / 4 == 0)
-                return 1;
-        }
-    }
-    return 0;
-}
-int main() {
-    int a, b;
-    int n = 0;
-    while (scanf("%d %d", &a, &b) != EOF)
-    {
-        if (runnian(a) == 1)
-        {
-            if (b == 2)
-                n = 29;
+	int sz1 = 0;
+	int sz2 = 0;
+	while (*arr1 != '\0')
+	{
+		arr1++;
+		sz1++;
+	}
+	arr1 = arr1 - sz1;
+	while (*arr2 != '\0')
+	{
+		arr2++;
+		sz2++;
+	}
+	arr2 = arr2 - sz2;
+	for (int i = 0; i < sz1; i++)
+	{
+		
+		if (*(arr1 + i) == *arr2)
+		{
+			int y = 0;
+			for (int k = 0; k < sz2; k++)
+			{
+				if (*(arr1 + i + k) == *(arr2 + k))
+				{
+					y++;
+				}
+				if (y == sz2)
+					return arr2;
+			}
+		}
 
-        }
-        if (runnian(a) == 0)
-        {
-            if (b == 2)
-                n = 28;
-
-        }
-        if (b == 1 || b == 3 || b == 5 || b == 7 || b == 8 || b == 10 || b == 12)
-        {
-            n = 31;
-        }
-        if (b == 4 || b == 6 || b == 9 || b == 11)
-        {
-            n = 30;
-        }
-        printf("%d\n", n);
-    }
-    return 0;
+	}
+	return NULL;
+ }
+int main()
+{
+	char arr1[] = "asdf";
+	char arr2[] = "asd";
+	printf("%s", strstr(arr1, arr2));
+	return 0;
 }

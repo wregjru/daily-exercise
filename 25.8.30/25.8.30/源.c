@@ -281,23 +281,78 @@
 //
 //    return 0;
 //}
-union t
+//union t
+//{
+//    int num;
+//    char b[4];
+//};
+//int main()
+//{
+//    union t q;
+//    q.num = 0x00000001;
+//    if (q.b[0] == 0x01) 
+//    {
+//        printf("小端\n");
+//    }
+//    if (q.b[0] == 0x00)
+//    {
+//        printf("大端\n");
+//    }
+//
+//    return 0;
+//}
+//int* getConcatenation(int* nums, int numsSize, int* returnSize)
+//{
+//    *returnSize = 2 * numsSize;
+//    int* ans = (int*)malloc(2 * numsSize * sizeof(int));
+//    if (ans == NULL)
+//    {
+//        *returnSize = 0;
+//        return NULL;
+//    }
+//    for (int i = 0; i < numsSize; i++)
+//    {
+//        ans[i] = nums[i];
+//        ans[i + numsSize] = nums[i];
+//    }
+//    return ans;
+//
+//}
+//int main()
+//{
+//	FILE* pc = fopen("copy.txt", "r");
+//	FILE* pp = fopen("paste.txt", "w");
+//	int ch;
+//	while ((ch=fgetc(pc)) != EOF)
+//	{
+//		fputc(ch, pp);
+//	}
+//	fclose(pc);
+//	fclose(pp);
+//
+//
+//	return 0;
+//}
+//#define CHANGE(n) ((n&0x55555555)<<1)+((n&0xaaaaaaaa)>>1)
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	int t=CHANGE(n);
+//	printf("%d", t);
+//	return 0;
+//}
+struct example 
 {
-    int num;
-    char b[4];
+    int a;
+    char b;
+    double c;
 };
+#define OFFSETOF(member) (int)&(((struct example*)0)->member)
 int main()
 {
-    union t q;
-    q.num = 0x00000001;
-    if (q.b[0] == 0x01) 
-    {
-        printf("小端\n");
-    }
-    if (q.b[0] == 0x00)
-    {
-        printf("大端\n");
-    }
-
-    return 0;
+    int t=OFFSETOF(c);
+    printf("%d,", t);
+	return 0;
 }
+

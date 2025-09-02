@@ -1,0 +1,6 @@
+﻿  contact.c
+  seqlist.c
+E:\lianxi\daily-exercise\25.9.2\25.9.2\seqlist.c(47,10): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“SLDataType”
+  test.c
+  正在生成代码...
+  25.9.2.vcxproj -> E:\lianxi\daily-exercise\25.9.2\x64\Debug\25.9.2.exe

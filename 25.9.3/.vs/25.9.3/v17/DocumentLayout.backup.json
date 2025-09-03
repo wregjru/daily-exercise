@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "E:\\lianxi\\daily-exercise\\25.9.3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4BFA0C48-EA91-4FAE-9C1A-933D5CE08C58}|25.9.3\\25.9.3.vcxproj|E:\\lianxi\\daily-exercise\\25.9.3\\25.9.3\\\u6E90.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4BFA0C48-EA91-4FAE-9C1A-933D5CE08C58}|25.9.3\\25.9.3.vcxproj|solutionrelative:25.9.3\\\u6E90.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4BFA0C48-EA91-4FAE-9C1A-933D5CE08C58}|25.9.3\\25.9.3.vcxproj|E:\\lianxi\\daily-exercise\\25.9.3\\25.9.3\\SList.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4BFA0C48-EA91-4FAE-9C1A-933D5CE08C58}|25.9.3\\25.9.3.vcxproj|solutionrelative:25.9.3\\SList.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BFA0C48-EA91-4FAE-9C1A-933D5CE08C58}|25.9.3\\25.9.3.vcxproj|E:\\lianxi\\daily-exercise\\25.9.3\\25.9.3\\SList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4BFA0C48-EA91-4FAE-9C1A-933D5CE08C58}|25.9.3\\25.9.3.vcxproj|solutionrelative:25.9.3\\SList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BFA0C48-EA91-4FAE-9C1A-933D5CE08C58}|25.9.3\\25.9.3.vcxproj|E:\\lianxi\\daily-exercise\\25.9.3\\25.9.3\\test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4BFA0C48-EA91-4FAE-9C1A-933D5CE08C58}|25.9.3\\25.9.3.vcxproj|solutionrelative:25.9.3\\test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SList.h",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.9.3\\25.9.3\\SList.h",
+              "RelativeDocumentMoniker": "25.9.3\\SList.h",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.9.3\\25.9.3\\SList.h",
+              "RelativeToolTip": "25.9.3\\SList.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-03T13:27:02.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "\u6E90.cpp",
-              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.9.3\\25.9.3\\\u6E90.cpp",
-              "RelativeDocumentMoniker": "25.9.3\\\u6E90.cpp",
-              "ToolTip": "E:\\lianxi\\daily-exercise\\25.9.3\\25.9.3\\\u6E90.cpp",
-              "RelativeToolTip": "25.9.3\\\u6E90.cpp",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAADAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-03T03:58:18.727Z",
+              "Title": "SList.c",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.9.3\\25.9.3\\SList.c",
+              "RelativeDocumentMoniker": "25.9.3\\SList.c",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.9.3\\25.9.3\\SList.c*",
+              "RelativeToolTip": "25.9.3\\SList.c*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-09-03T13:27:16.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "test.c",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.9.3\\25.9.3\\test.c",
+              "RelativeDocumentMoniker": "25.9.3\\test.c",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.9.3\\25.9.3\\test.c",
+              "RelativeToolTip": "25.9.3\\test.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-09-03T13:27:26.189Z",
               "EditorCaption": ""
             }
           ]

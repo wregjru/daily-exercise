@@ -1,0 +1,8 @@
+﻿  SLict.c
+E:\lianxi\daily-exercise\25.9.4\25.9.4\SList.h(14,6): warning C4031: 第二个形参表比第一个长
+  (编译源文件“SLict.c”)
+  
+E:\lianxi\daily-exercise\25.9.4\25.9.4\SList.h(14,6): warning C4028: 形参 1 与声明不一致
+  (编译源文件“SLict.c”)
+  
+  25.9.4.vcxproj -> E:\lianxi\daily-exercise\25.9.4\x64\Debug\25.9.4.exe

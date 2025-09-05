@@ -1,0 +1,5 @@
+﻿  SList.c
+E:\lianxi\daily-exercise\25.9.5\25.9.5\SList.h(14,6): warning C4031: 第二个形参表比第一个长
+  (编译源文件“SList.c”)
+  
+  25.9.5.vcxproj -> E:\lianxi\daily-exercise\25.9.5\x64\Debug\25.9.5.exe

@@ -3,6 +3,15 @@
   "WorkspaceRootPath": "E:\\lianxi\\daily-exercise\\25.9.6\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\lianxi\\daily-exercise\\25.9.5\\25.9.5\\SList.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\lianxi\\daily-exercise\\25.9.5\\25.9.5\\test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC55E1EB-538F-631A-DD6C-9D73DF41F02F}|C:\\Users\\Administrato\\AppData\\Roaming\\Microsoft\\VisualStudio\\17.0_b1b8902b\\SingleFileISense\\_sfi_4901e170-8b9a-4cac-a059-75e48e49348e_.vcxproj|E:\\LIANXI\\DAILY-EXERCISE\\25.9.5\\25.9.5\\SLIST.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{653AD451-18D3-4C8A-A0D7-5633CF287D00}|25.9.6\\25.9.6.vcxproj|E:\\lianxi\\daily-exercise\\25.9.6\\25.9.6\\\u6E90.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{653AD451-18D3-4C8A-A0D7-5633CF287D00}|25.9.6\\25.9.6.vcxproj|solutionrelative:25.9.6\\\u6E90.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -14,17 +23,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "test.c",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.9.5\\25.9.5\\test.c",
+              "RelativeDocumentMoniker": "..\\25.9.5\\25.9.5\\test.c",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.9.5\\25.9.5\\test.c",
+              "RelativeToolTip": "..\\25.9.5\\25.9.5\\test.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-09-06T13:15:27.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SList.h",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.9.5\\25.9.5\\SList.h",
+              "RelativeDocumentMoniker": "..\\25.9.5\\25.9.5\\SList.h",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.9.5\\25.9.5\\SList.h",
+              "RelativeToolTip": "..\\25.9.5\\25.9.5\\SList.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-06T13:15:24.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SList.c",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.9.5\\25.9.5\\SList.c",
+              "RelativeDocumentMoniker": "..\\25.9.5\\25.9.5\\SList.c",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.9.5\\25.9.5\\SList.c",
+              "RelativeToolTip": "..\\25.9.5\\25.9.5\\SList.c",
+              "ViewState": "AgIAAAwAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-09-06T13:15:22.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "\u6E90.c",
               "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.9.6\\25.9.6\\\u6E90.c",
               "RelativeDocumentMoniker": "25.9.6\\\u6E90.c",
               "ToolTip": "E:\\lianxi\\daily-exercise\\25.9.6\\25.9.6\\\u6E90.c",
               "RelativeToolTip": "25.9.6\\\u6E90.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-09-06T01:33:22.473Z",
               "EditorCaption": ""

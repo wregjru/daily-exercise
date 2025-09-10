@@ -1,0 +1,6 @@
+﻿  源.c
+E:\lianxi\daily-exercise\25.9.10\25.9.10\源.c(40,20): error C2037: “next”的左侧部分指定未定义的结构/联合“ListNode”
+E:\lianxi\daily-exercise\25.9.10\25.9.10\源.c(42,16): error C2037: “next”的左侧部分指定未定义的结构/联合“ListNode”
+E:\lianxi\daily-exercise\25.9.10\25.9.10\源.c(43,16): error C2037: “next”的左侧部分指定未定义的结构/联合“ListNode”
+E:\lianxi\daily-exercise\25.9.10\25.9.10\源.c(50,24): error C2037: “next”的左侧部分指定未定义的结构/联合“ListNode”
+E:\lianxi\daily-exercise\25.9.10\25.9.10\源.c(51,24): error C2037: “next”的左侧部分指定未定义的结构/联合“ListNode”

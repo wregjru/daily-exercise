@@ -24,15 +24,15 @@ void queuepush(queue* pt, qdatatype x)
 void queuepop(queue* pt)
 {
 	assert(pt->size);
-	pt->size--;
+	
 	if (pt->size == 1)
 	{
-		/*pt->ptail = NULL;
-		pt->phead = NULL;*/
-		qnode* dest = pt->phead;
+		pt->ptail = NULL;
+		pt->phead = NULL;
+	/*	qnode* dest = pt->phead;
 		pt->phead = pt->phead->next;
 		pt->ptail = pt->phead;
-		free(dest);
+		free(dest);*/
 	}
 	else
 	{
@@ -40,6 +40,7 @@ void queuepop(queue* pt)
 		pt->phead = pt->phead->next;
 		free(dest);
 	}
+	pt->size--;
 
 }
 void initqueue(queue* pt)

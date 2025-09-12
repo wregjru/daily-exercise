@@ -1,0 +1,5 @@
+﻿test.obj : error LNK2001: 无法解析的外部符号 _ifempty
+test.obj : error LNK2001: 无法解析的外部符号 _initqueue
+test.obj : error LNK2001: 无法解析的外部符号 _queuepop
+test.obj : error LNK2001: 无法解析的外部符号 _queuepush
+E:\lianxi\daily-exercise\25.9.12\Release\25.9.12.exe : fatal error LNK1120: 4 个无法解析的外部命令

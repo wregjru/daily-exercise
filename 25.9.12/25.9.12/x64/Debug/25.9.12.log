@@ -1,0 +1,6 @@
+﻿  test.c
+test.obj : error LNK2019: 无法解析的外部符号 queuepush，函数 main 中引用了该符号
+test.obj : error LNK2019: 无法解析的外部符号 queuepop，函数 main 中引用了该符号
+test.obj : error LNK2019: 无法解析的外部符号 initqueue，函数 main 中引用了该符号
+test.obj : error LNK2019: 无法解析的外部符号 ifempty，函数 main 中引用了该符号
+E:\lianxi\daily-exercise\25.9.12\x64\Debug\25.9.12.exe : fatal error LNK1120: 4 个无法解析的外部命令

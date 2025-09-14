@@ -87,10 +87,14 @@ void HPPop(HP* php)
 void HeapSort(int* a, int n)
 {
 	int end = n - 1;
-	for (int i = 1; i < n; i++)
+	/*for (int i = 1; i < n; i++)
 	{
 		
 		AdjustUp(a, i);
+	}*/
+	for (int i = (n - 2)/2; i >= 0; i--)
+	{
+		AdjustDown(a, end, i);
 	}
 	while (end > 0)
 	{

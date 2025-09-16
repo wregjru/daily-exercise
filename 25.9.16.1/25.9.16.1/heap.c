@@ -26,16 +26,17 @@ void HPPush(HP* php, HPDataType x)
 	if (php->size == php->capacity)
 	{
 		int nam = php->capacity == 0 ? 4 : php->capacity * 2;
-		HPDataType* new = (HPDataType*)realloc(php->a,sizeof(HPDataType) * nam);
-		php->a = new;
+		HPDataType* new = (HPDataType*)malloc(sizeof(HPDataType) * nam);
 		php->capacity = nam;
+		php->a = new;
 	}
-	php->a[php->size] = x;
 	php->size++;
+	php->a[php->size] = x;
 	int child = php->size - 1;
 	int parent = (child - 1) / 2;
 	
-	while (child > 0)
+	
+	while (child > 0)//先确定没越界再确定大小
 	{
 		if (php->a[child] < php->a[parent])
 		{
@@ -46,6 +47,7 @@ void HPPush(HP* php, HPDataType x)
 		else
 			break;
 	}
+	
 	
 }
 void HPPop(HP* php)
@@ -62,13 +64,13 @@ void HPPop(HP* php)
 void AdjustDown(HPDataType* a, int n, int parent)
 {
 	int child = parent * 2 + 1;
-	while (parent < (n - 1) / 2)//有问题吗
+	while (parent < (n - 1) / 2)
 	{
-		if (child<n-1&&a[child] > a[child + 1])
+		if (child<n - 1 && a[child] > a[child + 1])
 		{
 			child++;
 		}
-		if (a[child] < a[parent])
+		if (a[child] < a[parent])//条件
 		{
 			swap(&a[parent], &a[child]);
 			parent = child;
@@ -76,6 +78,7 @@ void AdjustDown(HPDataType* a, int n, int parent)
 		}
 		else
 			break;
+
 	}
 }
 void HeapSort(int* a, int n)
@@ -84,7 +87,7 @@ void HeapSort(int* a, int n)
 	{
 		AdjustDown(a, n, i);
 	}
-	for (int i = n - 1; i > 0; --i)
+	for (int i = n - 1; i > 0; i--)
 	{
 		swap(&a[0], &a[i]);
 		AdjustDown(a, i, 0);

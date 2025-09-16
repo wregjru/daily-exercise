@@ -71,7 +71,7 @@ void down(HPDataType* a, int n, int parent)
 int main()
 {
 	srand(time(0));
-	//createnum(1000);
+	createnum(1000000);
 	HP hp;
 	hp.a = NULL;
 	hp.size = 0;

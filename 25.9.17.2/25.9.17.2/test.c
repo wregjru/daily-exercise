@@ -118,17 +118,57 @@ BTNode* TreeFind(BTNode* root, int k)
 }
 void TreeLevelOrder(BTNode*root)
 {
-	Queue q;
+	/*Queue q;
 	QueueInit(&q);
 	if (root)
 	{
 		QueuePush(&q, root);
+	}*/
+	//while (!QueueEmpty(&q))
+	//{
+	//	BTNode* front = QueueFront(&q);
+	//	QueuePop(&q);
+	//	printf("%d ", front->data);
+	//	if (front->left)
+	//	{
+	//		QueuePush(&q, front->left);
+	//	}
+	//	if (front->right)
+	//	{
+	//		QueuePush(&q, front->right);
+	//	}
+	//}
+	/*Queue q;
+	QueueInit(&q);
+	if (root == NULL)
+	{
+		return;
 	}
+	QueuePush(&q, root);
 	while (!QueueEmpty(&q))
 	{
+		
 		BTNode* front = QueueFront(&q);
 		QueuePop(&q);
 		printf("%d ", front->data);
+		
+		if (front->left)
+			QueuePush(&q, front->left);
+		if (front->right)
+			QueuePush(&q, front->right);
+	}*/
+	Queue q;
+	QueueInit(&q);
+	if (root == NULL)
+	{
+		return;
+	}
+	QueuePush(&q, root);
+	while (!QueueEmpty(&q))
+	{
+		BTNode* front = QueueFront(&q);
+		printf("%d ", front->data);
+		QueuePop(&q);
 		if (front->left)
 		{
 			QueuePush(&q, front->left);
@@ -137,11 +177,19 @@ void TreeLevelOrder(BTNode*root)
 		{
 			QueuePush(&q, front->right);
 		}
+
+
 	}
+	
+	
+
+
+
+
 }
 int iscomplete(BTNode* root)
 {
-	Queue q;
+	/*Queue q;
 	QueueInit(&q);
 	if (root)
 	{
@@ -156,6 +204,31 @@ int iscomplete(BTNode* root)
 		QueuePush(&q, front->left);
 		QueuePush(&q, front->right);
 		
+	}
+	while (!QueueEmpty(&q))
+	{
+		BTNode* front = QueueFront(&q);
+		QueuePop(&q);
+		if (front)
+		{
+			return 0;
+		}
+	}
+	return 1;*/
+	Queue q;
+	QueueInit(&q);
+	QueuePush(&q, root);
+	while (!QueueEmpty(&q))
+	{
+		BTNode* front = QueueFront(&q);
+		if (front == NULL)
+		{
+			break;
+		}
+		QueuePop(&q);
+		QueuePush(&q, front->left);
+		QueuePush(&q, front->right);
+
 	}
 	while (!QueueEmpty(&q))
 	{

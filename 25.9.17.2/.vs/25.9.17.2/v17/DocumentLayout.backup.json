@@ -22,12 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -36,7 +32,7 @@
               "RelativeDocumentMoniker": "25.9.17.2\\queue.h",
               "ToolTip": "E:\\lianxi\\daily-exercise\\25.9.17.2\\25.9.17.2\\queue.h",
               "RelativeToolTip": "25.9.17.2\\queue.h",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAUwCkAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-09-17T05:11:24.378Z",
               "EditorCaption": ""
@@ -49,7 +45,7 @@
               "RelativeDocumentMoniker": "25.9.17.2\\queue.c",
               "ToolTip": "E:\\lianxi\\daily-exercise\\25.9.17.2\\25.9.17.2\\queue.c",
               "RelativeToolTip": "25.9.17.2\\queue.c",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAUwHIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAFgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-09-17T05:11:41.548Z",
               "EditorCaption": ""
@@ -62,7 +58,7 @@
               "RelativeDocumentMoniker": "25.9.17.2\\test.c",
               "ToolTip": "E:\\lianxi\\daily-exercise\\25.9.17.2\\25.9.17.2\\test.c*",
               "RelativeToolTip": "25.9.17.2\\test.c*",
-              "ViewState": "AgIAAKUAAAAAAAAAAAAUwLsAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAAAPEAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-09-17T05:12:41.599Z",
               "EditorCaption": ""

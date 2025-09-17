@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\lianxi\\daily-exercise\\25.9.17.3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E539C800-B0B4-4C98-AD17-C62205D0AF0F}|25.9.17.3\\25.9.17.3.vcxproj|E:\\lianxi\\daily-exercise\\25.9.17.3\\25.9.17.3\\sort.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E539C800-B0B4-4C98-AD17-C62205D0AF0F}|25.9.17.3\\25.9.17.3.vcxproj|solutionrelative:25.9.17.3\\sort.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "sort.c",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.9.17.3\\25.9.17.3\\sort.c",
+              "RelativeDocumentMoniker": "25.9.17.3\\sort.c",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.9.17.3\\25.9.17.3\\sort.c*",
+              "RelativeToolTip": "25.9.17.3\\sort.c*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-09-17T11:44:02.958Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

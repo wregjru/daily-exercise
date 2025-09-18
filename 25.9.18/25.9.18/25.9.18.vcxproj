@@ -124,6 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="heapsort.c" />
+    <ClCompile Include="quicksort.c" />
     <ClCompile Include="shellsort.c" />
     <ClCompile Include="test.c" />
   </ItemGroup>

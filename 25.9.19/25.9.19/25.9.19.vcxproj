@@ -128,6 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="mergesort.c" />
+    <ClCompile Include="mergesortno.c" />
     <ClCompile Include="quicksort.c" />
     <ClCompile Include="stack.c" />
     <ClCompile Include="test.c" />

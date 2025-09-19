@@ -6,3 +6,4 @@
 void swap(int* x, int* y);
 void mergesort(int* a, int sz);
 void quicksort(int* a, int sz);
+void mergesortno(int* a, int sz);

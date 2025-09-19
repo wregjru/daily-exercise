@@ -2,8 +2,8 @@
 #include"sort.h"
 int main()
 {
-	int a[7] = { 2,5,4,1,3,8,6 };
+	int a[8] = { 10,6,7,1,3,9,4,2 };
 	int sz = sizeof(a) / sizeof(int);
-	quicksort(a, sz);
+	mergesortno(a, sz);
 	return 0;
 }

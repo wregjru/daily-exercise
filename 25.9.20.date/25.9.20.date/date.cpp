@@ -27,7 +27,7 @@ int date::getmonthday(int year, int month)
 //	tmp += day;
 //	return tmp;
 //}
-date date::operator+=(int day)
+date& date::operator+=(int day)
 {
 	_day += day;
 	while (_day > getmonthday(_year, _month))

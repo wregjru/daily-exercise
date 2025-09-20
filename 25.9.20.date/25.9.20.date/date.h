@@ -9,7 +9,7 @@ public:
 	void print();
 	int getmonthday(int year, int month);
 	/*date operator+(int day);*/
-	date operator+=(int day);
+	date& operator+=(int day);
 private:
 	int _year;
 	int _month;

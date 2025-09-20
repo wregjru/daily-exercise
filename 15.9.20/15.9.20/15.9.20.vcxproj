@@ -124,7 +124,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="mergesort.c" />
+    <ClCompile Include="queue.cpp" />
     <ClCompile Include="stack.cpp" />
+    <ClCompile Include="test.cpp" />
     <ClCompile Include="构造函数.cpp" />
   </ItemGroup>
   <ItemGroup>

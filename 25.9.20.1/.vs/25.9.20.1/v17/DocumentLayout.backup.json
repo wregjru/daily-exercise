@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\lianxi\\daily-exercise\\25.9.20.1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{82A27697-59A5-473C-99A3-A503D0793E9A}|25.9.20.1\\25.9.20.1.vcxproj|E:\\lianxi\\daily-exercise\\25.9.20.1\\25.9.20.1\\date.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{82A27697-59A5-473C-99A3-A503D0793E9A}|25.9.20.1\\25.9.20.1.vcxproj|solutionrelative:25.9.20.1\\date.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82A27697-59A5-473C-99A3-A503D0793E9A}|25.9.20.1\\25.9.20.1.vcxproj|E:\\lianxi\\daily-exercise\\25.9.20.1\\25.9.20.1\\date.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{82A27697-59A5-473C-99A3-A503D0793E9A}|25.9.20.1\\25.9.20.1.vcxproj|solutionrelative:25.9.20.1\\date.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82A27697-59A5-473C-99A3-A503D0793E9A}|25.9.20.1\\25.9.20.1.vcxproj|E:\\lianxi\\daily-exercise\\25.9.20.1\\25.9.20.1\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{82A27697-59A5-473C-99A3-A503D0793E9A}|25.9.20.1\\25.9.20.1.vcxproj|solutionrelative:25.9.20.1\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Date.h",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.9.20.1\\25.9.20.1\\Date.h",
+              "RelativeDocumentMoniker": "25.9.20.1\\Date.h",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.9.20.1\\25.9.20.1\\Date.h",
+              "RelativeToolTip": "25.9.20.1\\Date.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-20T14:04:31.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "date.cpp",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.9.20.1\\25.9.20.1\\date.cpp",
+              "RelativeDocumentMoniker": "25.9.20.1\\date.cpp",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.9.20.1\\25.9.20.1\\date.cpp",
+              "RelativeToolTip": "25.9.20.1\\date.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-20T14:06:14.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "test.cpp",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.9.20.1\\25.9.20.1\\test.cpp",
+              "RelativeDocumentMoniker": "25.9.20.1\\test.cpp",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.9.20.1\\25.9.20.1\\test.cpp",
+              "RelativeToolTip": "25.9.20.1\\test.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-20T14:05:03.147Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

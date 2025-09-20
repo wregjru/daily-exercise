@@ -14,6 +14,13 @@
 //		a = (int*)malloc(sizeof(int) * size);
 //		top = 0;
 //	}
+//	stack(stack& d)
+//	{
+//		a = (int*)malloc(int(capacity)*capacity);
+//		memcpy(a, d.a, sizeof(int) * d.top);//memcpyº¯Êý
+//		top = d.top;
+//		capacity = d.capacity;
+//	}
 //	~stack()
 //	{
 //		free(a);
@@ -80,5 +87,6 @@
 //	s.pushstack(30);
 //	s.pushstack(40);
 //	s.pushstack(50);
+//	stack s2(s);
 //	return 0;
 //}

@@ -123,10 +123,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="func.cpp" />
     <ClCompile Include="mergesort.c" />
     <ClCompile Include="queue.cpp" />
     <ClCompile Include="stack.cpp" />
     <ClCompile Include="test.cpp" />
+    <ClCompile Include="函数验证.c" />
     <ClCompile Include="构造函数.cpp" />
   </ItemGroup>
   <ItemGroup>

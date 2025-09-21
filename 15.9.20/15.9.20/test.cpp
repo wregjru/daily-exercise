@@ -1,18 +1,83 @@
-//#define _CRT_SECURE_NO_WARNINGS
-//
-//#include<iostream>
-//using namespace std;                            
-//class A
+#define _CRT_SECURE_NO_WARNINGS
+
+#include<iostream>
+using namespace std;                            
+class A
+{
+public:
+	void func()
+	{
+		cout << "A::func()" << endl;
+	}
+	void anofunc()
+	{
+		cout << "A::anofunc()" << endl;
+	}
+};
+
+//typedef void(A::* PF)();
+//int main()
 //{
-//public:
-//	void func()
-//	{
-//		cout << "A::func()" << endl;
-//	}
-//};
-//
-//typedef void(A::*PF)(); //成员函数指针类型
-//
+//	PF pf = nullptr;
+//	pf = &A::func;
+//	A aa;
+//	(aa.*pf)();
+//	return 0;
+//}
+//typedef void(A::* PF)();
+//int main()
+//{
+//	PF pf = nullptr;
+//	pf = &A::func;
+//	A aa;
+//	(aa.*pf)();
+//	return 0;
+//}
+int main()
+{
+	void(A:: * pf)();
+	pf = &A::func;
+	A aa;
+	(aa.*pf)();
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//typedef void(A::* PF)(); //成员函数指针类型
 //int main()
 //{
 //	// void(A::*pf)() = nullptr;
@@ -23,4 +88,4 @@
 //	A aa;
 //	(aa.*pf)();
 //}
-	 //d3 = d1
+//	 //d3 = d1

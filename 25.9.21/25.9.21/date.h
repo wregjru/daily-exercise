@@ -4,9 +4,10 @@
 using namespace std;
 class date
 {
-	friend istream& operator>>(istream& in, date& d);
-	friend ostream& operator<<(ostream& out, date& d);
+	
 public:
+	friend ostream& operator<<(ostream& out, date& d);
+	friend istream& operator>>(istream& in, date& d);
 	date(int year = 2000, int month = 1, int day = 1);
 	void print();
 	int getmonthday(int year, int month);
@@ -22,5 +23,5 @@ private:
 	int _day;
 
 };
-istream& operator>>(istream& in, date& d);
 ostream& operator<<(ostream& out, date& d);
+istream& operator>>(istream& in, date& d);

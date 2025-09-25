@@ -2,8 +2,8 @@
 #include<iostream>
 #include<string>
 using namespace std;
-int main()
-{
+//int main()
+//{
 	//string s("Hello, welcome to the world of C++ programming!");
 	/*s.push_back('a');
 	s.append("sad");*/
@@ -41,4 +41,4 @@ int main()
 	string w = s.substr(0, t);
 	cout << w << endl;
 	return 0;*/
-}
+//}

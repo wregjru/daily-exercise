@@ -9,7 +9,7 @@ namespace bit
 	{
 	public:
 		typedef char* iterator;
-		string(const char str = "")
+		string(const char* str = "")//这里const，*都不能少。由于“hello”默为const，char*才为字符串
 		{
 			_size = strlen(str);
 			_capacity = _size;

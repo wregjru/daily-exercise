@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\lianxi\\daily-exercise\\25.9.25.SCHOOL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7A27BD64-D107-4AEB-9636-E2AAD0237B34}|25.9.25.SCHOOL\\25.9.25.SCHOOL.vcxproj|E:\\lianxi\\daily-exercise\\25.9.25.SCHOOL\\25.9.25.SCHOOL\\8.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7A27BD64-D107-4AEB-9636-E2AAD0237B34}|25.9.25.SCHOOL\\25.9.25.SCHOOL.vcxproj|solutionrelative:25.9.25.SCHOOL\\8.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A27BD64-D107-4AEB-9636-E2AAD0237B34}|25.9.25.SCHOOL\\25.9.25.SCHOOL.vcxproj|E:\\lianxi\\daily-exercise\\25.9.25.SCHOOL\\25.9.25.SCHOOL\\7.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7A27BD64-D107-4AEB-9636-E2AAD0237B34}|25.9.25.SCHOOL\\25.9.25.SCHOOL.vcxproj|solutionrelative:25.9.25.SCHOOL\\7.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A27BD64-D107-4AEB-9636-E2AAD0237B34}|25.9.25.SCHOOL\\25.9.25.SCHOOL.vcxproj|E:\\lianxi\\daily-exercise\\25.9.25.SCHOOL\\25.9.25.SCHOOL\\4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7A27BD64-D107-4AEB-9636-E2AAD0237B34}|25.9.25.SCHOOL\\25.9.25.SCHOOL.vcxproj|solutionrelative:25.9.25.SCHOOL\\4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A27BD64-D107-4AEB-9636-E2AAD0237B34}|25.9.25.SCHOOL\\25.9.25.SCHOOL.vcxproj|E:\\lianxi\\daily-exercise\\25.9.25.SCHOOL\\25.9.25.SCHOOL\\1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7A27BD64-D107-4AEB-9636-E2AAD0237B34}|25.9.25.SCHOOL\\25.9.25.SCHOOL.vcxproj|solutionrelative:25.9.25.SCHOOL\\1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A27BD64-D107-4AEB-9636-E2AAD0237B34}|25.9.25.SCHOOL\\25.9.25.SCHOOL.vcxproj|E:\\lianxi\\daily-exercise\\25.9.25.SCHOOL\\25.9.25.SCHOOL\\5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7A27BD64-D107-4AEB-9636-E2AAD0237B34}|25.9.25.SCHOOL\\25.9.25.SCHOOL.vcxproj|solutionrelative:25.9.25.SCHOOL\\5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A27BD64-D107-4AEB-9636-E2AAD0237B34}|25.9.25.SCHOOL\\25.9.25.SCHOOL.vcxproj|E:\\lianxi\\daily-exercise\\25.9.25.SCHOOL\\25.9.25.SCHOOL\\3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7A27BD64-D107-4AEB-9636-E2AAD0237B34}|25.9.25.SCHOOL\\25.9.25.SCHOOL.vcxproj|solutionrelative:25.9.25.SCHOOL\\3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A27BD64-D107-4AEB-9636-E2AAD0237B34}|25.9.25.SCHOOL\\25.9.25.SCHOOL.vcxproj|E:\\lianxi\\daily-exercise\\25.9.25.SCHOOL\\25.9.25.SCHOOL\\2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7A27BD64-D107-4AEB-9636-E2AAD0237B34}|25.9.25.SCHOOL\\25.9.25.SCHOOL.vcxproj|solutionrelative:25.9.25.SCHOOL\\2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "8.cpp",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.9.25.SCHOOL\\25.9.25.SCHOOL\\8.cpp",
+              "RelativeDocumentMoniker": "25.9.25.SCHOOL\\8.cpp",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.9.25.SCHOOL\\25.9.25.SCHOOL\\8.cpp",
+              "RelativeToolTip": "25.9.25.SCHOOL\\8.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-25T07:39:02.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "7.cpp",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.9.25.SCHOOL\\25.9.25.SCHOOL\\7.cpp",
+              "RelativeDocumentMoniker": "25.9.25.SCHOOL\\7.cpp",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.9.25.SCHOOL\\25.9.25.SCHOOL\\7.cpp",
+              "RelativeToolTip": "25.9.25.SCHOOL\\7.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-25T07:36:31.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "5.cpp",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.9.25.SCHOOL\\25.9.25.SCHOOL\\5.cpp",
+              "RelativeDocumentMoniker": "25.9.25.SCHOOL\\5.cpp",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.9.25.SCHOOL\\25.9.25.SCHOOL\\5.cpp",
+              "RelativeToolTip": "25.9.25.SCHOOL\\5.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvxYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-25T07:33:35.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "3.cpp",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.9.25.SCHOOL\\25.9.25.SCHOOL\\3.cpp",
+              "RelativeDocumentMoniker": "25.9.25.SCHOOL\\3.cpp",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.9.25.SCHOOL\\25.9.25.SCHOOL\\3.cpp",
+              "RelativeToolTip": "25.9.25.SCHOOL\\3.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-25T07:26:22.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "2.cpp",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.9.25.SCHOOL\\25.9.25.SCHOOL\\2.cpp",
+              "RelativeDocumentMoniker": "25.9.25.SCHOOL\\2.cpp",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.9.25.SCHOOL\\25.9.25.SCHOOL\\2.cpp",
+              "RelativeToolTip": "25.9.25.SCHOOL\\2.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-25T07:24:04.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "4.cpp",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.9.25.SCHOOL\\25.9.25.SCHOOL\\4.cpp",
+              "RelativeDocumentMoniker": "25.9.25.SCHOOL\\4.cpp",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.9.25.SCHOOL\\25.9.25.SCHOOL\\4.cpp",
+              "RelativeToolTip": "25.9.25.SCHOOL\\4.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-25T03:57:44.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "1.cpp",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.9.25.SCHOOL\\25.9.25.SCHOOL\\1.cpp",
+              "RelativeDocumentMoniker": "25.9.25.SCHOOL\\1.cpp",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.9.25.SCHOOL\\25.9.25.SCHOOL\\1.cpp",
+              "RelativeToolTip": "25.9.25.SCHOOL\\1.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-25T03:51:00.805Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

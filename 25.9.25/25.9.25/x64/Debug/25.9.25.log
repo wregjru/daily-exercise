@@ -1,0 +1,66 @@
+﻿  string.cpp
+E:\lianxi\daily-exercise\25.9.25\25.9.25\string.h(12,9): error C2440: “默认参数”: 无法从“const char [1]”转换为“const char”
+  (编译源文件“string.cpp”)
+      E:\lianxi\daily-exercise\25.9.25\25.9.25\string.h(12,9):
+      没有使该转换得以执行的上下文
+  
+E:\lianxi\daily-exercise\25.9.25\25.9.25\string.h(14,12): error C2664: “size_t strlen(const char *)”: 无法将参数 1 从“const char”转换为“const char *”
+  (编译源文件“string.cpp”)
+      E:\lianxi\daily-exercise\25.9.25\25.9.25\string.h(14,19):
+      从整型类型转换为指针类型需要 reinterpret_cast、C 样式转换或带圆括号的函数样式强制转换
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\string.h(215,16):
+      参见“strlen”的声明
+      E:\lianxi\daily-exercise\25.9.25\25.9.25\string.h(14,12):
+      尝试匹配参数列表“(const char)”时
+  
+E:\lianxi\daily-exercise\25.9.25\25.9.25\string.h(17,4): error C2664: “char *strcpy(char *,const char *)”: 无法将参数 2 从“const char”转换为“const char *”
+  (编译源文件“string.cpp”)
+      E:\lianxi\daily-exercise\25.9.25\25.9.25\string.h(17,17):
+      从整型类型转换为指针类型需要 reinterpret_cast、C 样式转换或带圆括号的函数样式强制转换
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\string.h(130,1):
+      参见“strcpy”的声明
+      E:\lianxi\daily-exercise\25.9.25\25.9.25\string.h(17,4):
+      尝试匹配参数列表“(char *, const char)”时
+  
+E:\lianxi\daily-exercise\25.9.25\25.9.25\string.cpp(37,13): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  test.cpp
+E:\lianxi\daily-exercise\25.9.25\25.9.25\string.h(12,9): error C2440: “默认参数”: 无法从“const char [1]”转换为“const char”
+  (编译源文件“test.cpp”)
+      E:\lianxi\daily-exercise\25.9.25\25.9.25\string.h(12,9):
+      没有使该转换得以执行的上下文
+  
+E:\lianxi\daily-exercise\25.9.25\25.9.25\string.h(14,12): error C2664: “size_t strlen(const char *)”: 无法将参数 1 从“const char”转换为“const char *”
+  (编译源文件“test.cpp”)
+      E:\lianxi\daily-exercise\25.9.25\25.9.25\string.h(14,19):
+      从整型类型转换为指针类型需要 reinterpret_cast、C 样式转换或带圆括号的函数样式强制转换
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\string.h(215,16):
+      参见“strlen”的声明
+      E:\lianxi\daily-exercise\25.9.25\25.9.25\string.h(14,12):
+      尝试匹配参数列表“(const char)”时
+  
+E:\lianxi\daily-exercise\25.9.25\25.9.25\string.h(17,4): error C2664: “char *strcpy(char *,const char *)”: 无法将参数 2 从“const char”转换为“const char *”
+  (编译源文件“test.cpp”)
+      E:\lianxi\daily-exercise\25.9.25\25.9.25\string.h(17,17):
+      从整型类型转换为指针类型需要 reinterpret_cast、C 样式转换或带圆括号的函数样式强制转换
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\string.h(130,1):
+      参见“strcpy”的声明
+      E:\lianxi\daily-exercise\25.9.25\25.9.25\string.h(17,4):
+      尝试匹配参数列表“(char *, const char)”时
+  
+E:\lianxi\daily-exercise\25.9.25\25.9.25\test.cpp(5,15): error C2665: “bit::string::string”: 没有重载函数可以转换所有参数类型
+      E:\lianxi\daily-exercise\25.9.25\25.9.25\string.h(57,2):
+      可能是“bit::string::string(const bit::string &)”
+          E:\lianxi\daily-exercise\25.9.25\25.9.25\test.cpp(5,15):
+          “bit::string::string(const bit::string &)”: 无法将参数 1 从“const char [6]”转换为“const bit::string &”
+              E:\lianxi\daily-exercise\25.9.25\25.9.25\test.cpp(5,16):
+              原因如下: 无法从“const char [6]”转换为“const bit::string”
+      E:\lianxi\daily-exercise\25.9.25\25.9.25\string.h(12,3):
+      或    “bit::string::string(const char)”
+          E:\lianxi\daily-exercise\25.9.25\25.9.25\test.cpp(5,15):
+          “bit::string::string(const char)”: 无法将参数 1 从“const char [6]”转换为“const char”
+              E:\lianxi\daily-exercise\25.9.25\25.9.25\test.cpp(5,16):
+              没有使该转换得以执行的上下文
+      E:\lianxi\daily-exercise\25.9.25\25.9.25\test.cpp(5,15):
+      尝试匹配参数列表“(const char [6])”时
+  
+  正在生成代码...

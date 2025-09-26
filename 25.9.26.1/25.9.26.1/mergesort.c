@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
-void _mergesort(int* arr, int*tmp,int begin, int end)
+#include"sort.h"
+void _mergesort(int* arr, int* tmp, int begin, int end)
 {
 	if (begin >= end)
 		return;
@@ -8,7 +9,7 @@ void _mergesort(int* arr, int*tmp,int begin, int end)
 	_mergesort(arr, tmp, mid + 1, end);
 	int begin1 = begin;
 	int end1 = mid;
-	int begin2 = mid+1;
+	int begin2 = mid + 1;
 	int end2 = end;
 	int i = begin;
 	while (begin1 <= end1 && begin2 <= end2)
@@ -20,19 +21,19 @@ void _mergesort(int* arr, int*tmp,int begin, int end)
 		}
 		else if (arr[begin1] >= arr[begin2])
 		{
-			tmp[i++] = arr[begin2++];
-			
+			tmp[i++] = arr[begin2++];//这行代码有问题
+
 		}
 	}
 	while (begin1 <= end1)
 	{
-		tmp[i++]=arr[begin1++];
-		
+		tmp[i++] = arr[begin1++];
+
 	}
 	while (begin2 <= end2)
 	{
-		tmp[i++]=arr[begin2++];
-		
+		tmp[i++] = arr[begin2++];
+
 	}
 	for (int j = begin; j <= end; j++)
 	{

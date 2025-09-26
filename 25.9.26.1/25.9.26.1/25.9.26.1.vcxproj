@@ -126,6 +126,8 @@
     <ClInclude Include="sort.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="mergesort.c" />
+    <ClCompile Include="quicksort.c" />
     <ClCompile Include="shellsort.c" />
     <ClCompile Include="heapsort.c" />
     <ClCompile Include="test.c" />

@@ -4,6 +4,6 @@ int main()
 {
 	int arr[6] = { 3,2,5,7,1,8 };
 	int sz = sizeof(arr) / sizeof(int);
-	heapsort(arr, sz);
+	mergesort(arr, sz);
 	return 0;
 }

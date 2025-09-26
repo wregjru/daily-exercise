@@ -1,51 +1,46 @@
 #define _CRT_SECURE_NO_WARNINGS
-void down(int* arr, int father,int sz)
+down(int* a, int father, int sz)
 {
-	int son = 2 * father + 1;
-	while (son<sz)
+	int child = 2 * father + 1;
+	while (child < sz)
 	{
-		if (son+1< sz&&arr[son] < arr[son + 1])
+		if (child + 1 < sz && a[child] < a[child + 1])
 		{
-			son++;
+			child++;
 		}
-		if (arr[father] < arr[son])
+		if (a[father] < a[child])
 		{
-			int tmp = arr[father];
-			arr[father] = arr[son];
-			arr[son] = tmp;
-			father = son;
-			son = son * 2 + 1;
+			int tmp = a[child];
+			a[child] = a[father];
+			a[father] = tmp;
+			father = child;
+			child = child * 2 + 1;
 		}
 		else
-		{
 			return;
-		}
-		
 	}
-	
 }
-void sort(int* arr, int sz)
+void sort(int* a, int sz)
 {
-	int all = sz-1;
-	while (all > 0)
+	int end = sz - 1;
+	while (end >= 0)
 	{
-		int tmp = arr[0];
-		arr[0] = arr[all ];
-		arr[all ] = tmp;
-		down(arr, 0,all);
-		all--;
+		int tmp = a[end];
+		a[end] = a[0];
+		a[0] = tmp;
+		down(a, 0, end);
+		end--;
 	}
 }
-void createheap(int* arr, int sz)
+void cteateheap(int* a, int sz)
 {
-	for (int i = (sz - 1) / 2; i >= 0; i--)//×¢Òâ£¬¼õÈ¥2
+	for (int i = (sz - 1) / 2; i >= 0; i--)
 	{
-		down(arr, i, sz);
+		down(a,i,sz);
 	}
-	
 }
-void heapsort(int* arr, int sz)
+void heapsort(int* a,int sz)
 {
-	createheap(arr, sz);
-	sort(arr,sz);
+	cteateheap(a, sz);
+	sort(a, sz);
 }

@@ -27,13 +27,42 @@ namespace bit
 		{
 			return _finish;
 		}
+		vector(const vector<T>&s)
+		{
+			reserve(s.size());
+			for (auto&t : s)
+			{
+				push_back(t);
+			}
+		}
+		vector(size_t n, const T& val = T())
+		{
+			reserve(n);
+			for (int i=0;i<n;i++)
+			{
+				push_back(val);
+			}
+		}
+		template <class another>
+		vector(another left, another right)
+		{
+			while (left != right)
+			{
+				push_back(*left);
+				left++;
+			}
+		}
 		void reserve(size_t n)
 		{
 			if (n > capacity())
 			{
 				T* tmp = new T[n];
-				memcpy(tmp, _start, size() * sizeof(T));
+				//memcpy(tmp, _start, size() * sizeof(T));
 				size_t old = size();
+				for (int i = 0; i < old; i++)
+				{
+					tmp[i] = _start[i];
+				}
 				delete[] _start;
 				_start = tmp;
 				_finish = tmp + old;
@@ -96,6 +125,41 @@ namespace bit
 		{
 			assert(i < size());
 			return *(_start + i);
+		}
+		void swap(vector<T> s)
+		{
+			swap(_start, s._start);
+			swap(_finish, s._finish);
+			swap(_end_of_storage, s._end_of_storage);
+		}
+		vector<T>& operator=(vector<T> s)
+		{
+			swap(s);
+			return *this;
+		}
+		~vector()
+		{
+			if (_start)
+			{
+				delete[] _start;
+				_start = _finish = _end_of_storage = nullptr;
+			}
+		}
+		void resize(size_t n, T val = T())
+		{
+			if (n < size())
+			{
+				_finish = _start + n;
+			}
+			else
+			{
+				reserve(n);
+				while (_finish < _start + n)
+				{
+					*_finish = val;
+					++_finish;
+				}
+			}
 		}
 	private:
 		iterator _start=nullptr;

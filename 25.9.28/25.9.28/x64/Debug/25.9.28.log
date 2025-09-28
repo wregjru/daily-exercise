@@ -1,0 +1,17 @@
+﻿  源.cpp
+E:\lianxi\daily-exercise\25.9.28\25.9.28\list.h(16,4): error C2760: 语法错误: 此处出现意外的“_next”；应为“{”
+  (编译源文件“源.cpp”)
+      E:\lianxi\daily-exercise\25.9.28\25.9.28\list.h(16,4):
+      模板实例化上下文(最早的实例化上下文)为
+          E:\lianxi\daily-exercise\25.9.28\25.9.28\list.h(9,9):
+          在编译类模板“bit::list_node”时
+  
+E:\lianxi\daily-exercise\25.9.28\25.9.28\list.h(16,9): error C2059: 语法错误:“=”
+  (编译源文件“源.cpp”)
+  
+E:\lianxi\daily-exercise\25.9.28\25.9.28\list.h(18,3): error C2334: “{”的前面有意外标记；跳过明显的函数体
+  (编译源文件“源.cpp”)
+  
+E:\lianxi\daily-exercise\25.9.28\25.9.28\list.h(14,1): error C1903: 无法从以前的错误中恢复；正在停止编译
+  (编译源文件“源.cpp”)
+  

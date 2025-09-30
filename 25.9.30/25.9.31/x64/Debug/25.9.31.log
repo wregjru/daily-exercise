@@ -1,0 +1,131 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(538,5): warning MSB8028: 中间目录(x64\Debug\)包含从另一个项目(25.9.31.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  源.cpp
+E:\lianxi\daily-exercise\25.9.30\25.9.31\源.cpp(15,4): error C2665: “std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::insert”: 没有重载函数可以转换所有参数类型
+E:\lianxi\daily-exercise\25.9.30\25.9.31\源.cpp(15,4): error C2665:         with
+E:\lianxi\daily-exercise\25.9.30\25.9.31\源.cpp(15,4): error C2665:         [
+E:\lianxi\daily-exercise\25.9.30\25.9.31\源.cpp(15,4): error C2665:             _Kty=std::string,
+E:\lianxi\daily-exercise\25.9.30\25.9.31\源.cpp(15,4): error C2665:             _Ty=int,
+E:\lianxi\daily-exercise\25.9.30\25.9.31\源.cpp(15,4): error C2665:             _Pr=std::less<std::string>,
+E:\lianxi\daily-exercise\25.9.30\25.9.31\源.cpp(15,4): error C2665:             _Alloc=std::allocator<std::pair<const std::string,int>>
+E:\lianxi\daily-exercise\25.9.30\25.9.31\源.cpp(15,4): error C2665:         ]
+      C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\include\xtree(1294,10):
+      可能是“void std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::insert(std::initializer_list<std::pair<const std::string,int>>)”
+          with
+          [
+              _Kty=std::string,
+              _Ty=int,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,int>>
+          ]
+          E:\lianxi\daily-exercise\25.9.30\25.9.31\源.cpp(15,4):
+          “void std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::insert(std::initializer_list<std::pair<const std::string,int>>)”: 无法将参数 1 从“std::pair<std::string,std::string>”转换为“std::initializer_list<std::pair<const std::string,int>>”
+          with
+          [
+              _Kty=std::string,
+              _Ty=int,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,int>>
+          ]
+              E:\lianxi\daily-exercise\25.9.30\25.9.31\源.cpp(15,11):
+              没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+      C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\include\map(190,14):
+      或    “std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,int>>>> std::map<std::string,int,std::less<std::string>,std::allocator<std::pair<const std::string,int>>>::insert(std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,int>>>>,_Valty &&)”
+          E:\lianxi\daily-exercise\25.9.30\25.9.31\源.cpp(15,4):
+          “std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,int>>>> std::map<std::string,int,std::less<std::string>,std::allocator<std::pair<const std::string,int>>>::insert(std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,int>>>>,_Valty &&)”: 应输入 2 个参数，却提供了 1 个
+      C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\include\map(185,26):
+      或    “std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,int>>>>,bool> std::map<std::string,int,std::less<std::string>,std::allocator<std::pair<const std::string,int>>>::insert(_Valty &&)”
+          E:\lianxi\daily-exercise\25.9.30\25.9.31\源.cpp(15,4):
+          “std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,int>>>>,bool> std::map<std::string,int,std::less<std::string>,std::allocator<std::pair<const std::string,int>>>::insert(_Valty &&)”: 无法推导“__formal”的 模板 参数
+              C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\include\map(184,29):
+              “std::enable_if_t<false,int>”: 未能使别名模板专用化
+      C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\include\xtree(1234,26):
+      或    “std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,int>>>>,bool> std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::insert(const std::pair<const std::string,int> &)”
+          with
+          [
+              _Kty=std::string,
+              _Ty=int,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,int>>
+          ]
+          E:\lianxi\daily-exercise\25.9.30\25.9.31\源.cpp(15,11):
+          “初始化”: 无法从“std::pair<std::string,std::string>”转换为“const std::pair<const std::string,int> &”
+              E:\lianxi\daily-exercise\25.9.30\25.9.31\源.cpp(15,11):
+              原因如下: 无法从“std::pair<std::string,std::string>”转换为“const std::pair<const std::string,int>”
+              E:\lianxi\daily-exercise\25.9.30\25.9.31\源.cpp(15,11):
+              没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+      C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\include\xtree(1240,14):
+      或    “std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,int>>>> std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::insert(const std::pair<const std::string,int> &)”
+          with
+          [
+              _Kty=std::string,
+              _Ty=int,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,int>>
+          ]
+          E:\lianxi\daily-exercise\25.9.30\25.9.31\源.cpp(15,4):
+          “std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,int>>>> std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::insert(const std::pair<const std::string,int> &)”: 无法推导“__formal”的 模板 参数
+          with
+          [
+              _Kty=std::string,
+              _Ty=int,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,int>>
+          ]
+              C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\include\xtree(1239,38):
+              “std::enable_if_t<false,int>”: 未能使别名模板专用化
+      C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\include\xtree(1245,26):
+      或    “std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,int>>>>,bool> std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::insert(std::pair<const std::string,int> &&)”
+          with
+          [
+              _Kty=std::string,
+              _Ty=int,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,int>>
+          ]
+          E:\lianxi\daily-exercise\25.9.30\25.9.31\源.cpp(15,11):
+          “初始化”: 无法从“std::pair<std::string,std::string>”转换为“std::pair<const std::string,int> &&”
+              E:\lianxi\daily-exercise\25.9.30\25.9.31\源.cpp(15,11):
+              原因如下: 无法从“std::pair<std::string,std::string>”转换为“std::pair<const std::string,int>”
+              E:\lianxi\daily-exercise\25.9.30\25.9.31\源.cpp(15,11):
+              没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+      C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\include\xtree(1251,14):
+      或    “std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,int>>>> std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::insert(std::pair<const std::string,int> &&)”
+          with
+          [
+              _Kty=std::string,
+              _Ty=int,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,int>>
+          ]
+          E:\lianxi\daily-exercise\25.9.30\25.9.31\源.cpp(15,4):
+          “std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,int>>>> std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::insert(std::pair<const std::string,int> &&)”: 无法推导“__formal”的 模板 参数
+          with
+          [
+              _Kty=std::string,
+              _Ty=int,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,int>>
+          ]
+              C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\include\xtree(1239,38):
+              “std::enable_if_t<false,int>”: 未能使别名模板专用化
+      C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\include\xtree(1282,10):
+      或    “void std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::insert(_Iter,_Iter)”
+          with
+          [
+              _Kty=std::string,
+              _Ty=int,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,int>>
+          ]
+          E:\lianxi\daily-exercise\25.9.30\25.9.31\源.cpp(15,4):
+          “void std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::insert(_Iter,_Iter)”: 应输入 2 个参数，却提供了 1 个
+          with
+          [
+              _Kty=std::string,
+              _Ty=int,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,int>>
+          ]
+      E:\lianxi\daily-exercise\25.9.30\25.9.31\源.cpp(15,4):
+      尝试匹配参数列表“(std::pair<std::string,std::string>)”时
+  

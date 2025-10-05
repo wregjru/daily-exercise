@@ -11,55 +11,68 @@
 #include<queue>
 using namespace std;
 
-struct co
-{
-	int l; int r;
-}cow[2600];
-struct fa
-{
-	int q; int n;//强度，数量
-}fang[2600];
-bool com1(co a1, co a2)
-{
-	return a1.l > a2.l;
-}
-bool com2(fa a1, fa a2)
-{
-	return a1.q > a2.q;
-}
-
 int main()
 {
-	int cown; int fn;
-	cin >> cown >> fn;
-	for (int i = 0; i < cown; i++)
+	long long _size = 0; cin >> _size;
+	long long ret = 0;
+	for (long long i = 1; i <=  _size / 2; i++)
 	{
-		cin >> cow[i].l >> cow[i].r;
+		ret += _size / i;
 	}
-	for (int i = 0; i < fn; i++)
-	{
-		cin >> fang[i].q >> fang[i].n;
-	}
-	sort(cow, cow + cown, com1);
-	sort(fang, fang + fn, com2);
-	int ret = 0;
-	for (int i = 0; i < cown; i++)
-	{
-		int left = cow[i].l;
-		int right = cow[i].r;
-		for (int j = 0; j < fn; j++)
-		{
-			if (fang[j].n != 0 && fang[j].q >= left && fang[j].q <= right)
-			{
-				fang[j].n--; ret++;
-				break;
-			}
-			if (fang[j].q < left)break;
-		}
-	}
+	ret =ret+ _size - _size / 2;
 	cout << ret << endl;
-
+	return 0;
 }
+
+//struct co
+//{
+//	int l; int r;
+//}cow[2600];
+//struct fa
+//{
+//	int q; int n;//强度，数量
+//}fang[2600];
+//bool com1(co a1, co a2)
+//{
+//	return a1.l > a2.l;
+//}
+//bool com2(fa a1, fa a2)
+//{
+//	return a1.q > a2.q;
+//}
+//
+//int main()
+//{
+//	int cown; int fn;
+//	cin >> cown >> fn;
+//	for (int i = 0; i < cown; i++)
+//	{
+//		cin >> cow[i].l >> cow[i].r;
+//	}
+//	for (int i = 0; i < fn; i++)
+//	{
+//		cin >> fang[i].q >> fang[i].n;
+//	}
+//	sort(cow, cow + cown, com1);
+//	sort(fang, fang + fn, com2);
+//	int ret = 0;
+//	for (int i = 0; i < cown; i++)
+//	{
+//		int left = cow[i].l;
+//		int right = cow[i].r;
+//		for (int j = 0; j < fn; j++)
+//		{
+//			if (fang[j].n != 0 && fang[j].q >= left && fang[j].q <= right)
+//			{
+//				fang[j].n--; ret++;
+//				break;
+//			}
+//			if (fang[j].q < left)break;
+//		}
+//	}
+//	cout << ret << endl;
+//
+//}
 
 
 

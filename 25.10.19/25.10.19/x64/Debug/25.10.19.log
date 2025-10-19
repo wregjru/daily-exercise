@@ -1,0 +1,3 @@
+﻿  源.cpp
+E:\lianxi\daily-exercise\25.10.19\25.10.19\源.cpp(9,16): warning C4778: “printf”: 格式字符串“%”未终止
+  25.10.19.vcxproj -> E:\lianxi\daily-exercise\25.10.19\x64\Debug\25.10.19.exe

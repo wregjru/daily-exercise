@@ -1,0 +1,4 @@
+﻿  源.cpp
+E:\lianxi\daily-exercise\25.10.27\25.10.27\源.cpp(28,35): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\lianxi\daily-exercise\25.10.27\25.10.27\源.cpp(33,10): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  25.10.27.vcxproj -> E:\lianxi\daily-exercise\25.10.27\x64\Debug\25.10.27.exe

@@ -1,0 +1,3 @@
+﻿  源.cpp
+E:\lianxi\daily-exercise\25.10.28div4\25.10.28div4\源.cpp(31,15): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+  25.10.28div4.vcxproj -> E:\lianxi\daily-exercise\25.10.28div4\x64\Debug\25.10.28div4.exe

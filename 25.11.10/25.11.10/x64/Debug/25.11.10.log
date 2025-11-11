@@ -1,3 +1,2 @@
 ﻿  源.cpp
-E:\lianxi\daily-exercise\25.11.10\25.11.10\源.cpp(29,9): warning C4244: “初始化”: 从“double”转换到“__int64”，可能丢失数据
   25.11.10.vcxproj -> E:\lianxi\daily-exercise\25.11.10\x64\Debug\25.11.10.exe

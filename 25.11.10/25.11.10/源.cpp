@@ -23,49 +23,222 @@ typedef unsigned long long ull;
 typedef pair<int, int> PII;
 
 
-int n; int m;
-int kin[1010];
-int C[2010][2010];
-int mod = 1e9 + 7;
-void getC()
-{
-	C[0][0] = 1;
-	for (int i = 1; i <= 2005; i++)
-	{
-		C[i][0] = 1;
-		for (int j = 1; j <= i; j++)
-		{
-			C[i][j] = (C[i - 1][j] + C[i - 1][j - 1]) % mod;
-		}
-	}
-}
+int n; int num[200010];
+string ans;
+int pmin; int pmax;
 
 signed main()
 {
-	cin >> n >> m;
-	for (int i = 1; i <= m; i++)
+	int T; cin >> T;
+	while (T--)
 	{
-		cin >> kin[i];
-	}
-	getC();
-	int ret = 1;
-	for (int i = 1; i <= m; i++)
-	{
-		ret = (ret * C[kin[i] + n - 1][n - 1]) % mod;
-	}
-	for (int i = 1; i < n; i++)
-	{
-		int r = C[n][i];
-		for (int j = 1; j <= m; j++)
+		cin >> n;
+		for (int i = 1; i <= n; i++)
 		{
-			r = (r * C[kin[j] + n - 1 - i][n - 1 - i]) % mod;
+			cin >> num[i];
+			if (num[i] == 1)pmin = i;
+			if (num[i] == n)pmax = i;
 		}
-		if (i % 2 == 1)ret = ((ret - r) % mod + mod) % mod;
-		else ret = (ret + r) % mod;
+		cin >> ans;
+		string r;
+		r.assign(200010, '0');
+		for (int i = 1; i < pmin; i++)
+		{
+			if (num[i] > num[pmin] && num[i] < num[1])r[i-1] = '1';
+		}
+		for (int i = 1; i < pmax; i++)
+		{
+			if(num[i] < num[pmax] && num[i] > num[1])r[i-1] = '1';
+		}
+		int m = pmin; int M = pmax;
+		if (pmin > pmax)
+		{
+			M = pmin; m = pmax;
+		}
+		for (int i = m; i < M; i++)
+		{
+			if (num[i] < num[pmax] && num[i] > num[pmin])r[i-1] = '1';
+		}
+		for (int i = pmin; i < n; i++)
+		{
+			if (num[i] > num[pmin] && num[i] < num[n])r[i-1] = '1';
+		}
+		for (int i = pmax; i < n; i++)
+		{
+			if (num[i] < num[pmax] && num[i] > num[n])r[i-1] = '1';
+		}
+		int flag = 1;
+		for (int i = 0; i < n; i++)
+		{
+			if (ans[i] == '0')continue;
+			else
+			{
+				if (r[i] == '0')
+				{
+					flag = 0; break;
+				}
+			}
+		}
+		int cnt = 1;
+		if (pmin > 1)cnt++;
+		if (pmax > 1)cnt++;
+		if (pmin < n)cnt++;
+		if (pmax < n)cnt++;
+		if (flag == 1)
+		{
+			cout << cnt << endl;
+			if (pmin > 1)cout << 1 << " " << pmin << endl;
+			if (pmax > 1)cout << 1 << " " << pmax << endl;
+			if (pmin < n)cout << pmin << " " << n << endl;
+			if (pmax < n)cout << pmax << " " << n << endl;
+			cout << min(pmin, pmax) << " " << max(pmin, pmax) << endl;
+		}
+		else
+		{
+			cout << -1 << endl;
+		}
 	}
-	cout << ret << endl;
+
 	return 0;
 }
+
+
+
+
+
+
+//int n; int num[200010];
+//string ans;
+//signed main()
+//{
+//	int T; cin >> T;
+//	while (T--)
+//	{
+//		cin >> n;
+//		int mi = 0x3f3f3f3f;
+//		int ma = -0x3f3f3f3f;
+//		int p
+//		for (int i = 1; i <= n; i++)
+//		{
+//			cin >> num[i];
+//			mi = min(mi, num[i]);
+//			ma = max(ma, num[i]);
+//		}
+//		cin >> ans;
+//		int flag = 1;
+//		for (int i = 0; ans.size(); i++)
+//		{
+//			if (ans[i] == '1')
+//			{
+//				if (num[i] == ma || num[i] == mi)
+//				{
+//					flag = 0;
+//					break;
+//				}
+//			}
+//		}
+//		if (flag == 0)
+//		{
+//			cout << -1 << endl;
+//		}
+//		else
+//		{
+//			cout<<
+//		}
+//
+//	}
+//	
+//	return 0;
+//}
+
+
+
+
+//int num[110];
+//int n;
+//signed main()
+//{
+//	int T; cin >> T;
+//	while (T--)
+//	{
+//		cin >> n;
+//		for (int i = 1; i <= n; i++)
+//		{
+//			cin >> num[i];
+//		}
+//		sort(num + 1, num + 1 + n);
+//		for (int i = 1; i < n; i++)
+//		{
+//			if (i % 2 == 0)
+//			{
+//				int tmp = num[i];
+//				num[i] = num[i + 1];
+//				num[i + 1] = tmp;
+//			}
+//		}
+//		int flag = 1;
+//		for (int i = 1; i < n; i++)
+//		{
+//			if (num[i + 1] < num[i])
+//			{
+//				flag = 0;
+//				break;
+//			}
+//		}
+//		if (flag == 1)cout << "Yes" << endl;
+//		else cout << "No" << endl;
+//	}
+//	
+//	return 0;
+//}
+//
+
+
+
+
+//int n; int m;
+//int kin[1010];
+//int C[2010][2010];
+//int mod = 1e9 + 7;
+//void getC()
+//{
+//	C[0][0] = 1;
+//	for (int i = 1; i <= 2005; i++)
+//	{
+//		C[i][0] = 1;
+//		for (int j = 1; j <= i; j++)
+//		{
+//			C[i][j] = (C[i - 1][j] + C[i - 1][j - 1]) % mod;
+//		}
+//	}
+//}
+//
+//signed main()
+//{
+//	cin >> n >> m;
+//	for (int i = 1; i <= m; i++)
+//	{
+//		cin >> kin[i];
+//	}
+//	getC();
+//	int ret = 1;
+//	for (int i = 1; i <= m; i++)
+//	{
+//		ret = (ret * C[kin[i] + n - 1][n - 1]) % mod;
+//	}
+//	for (int i = 1; i < n; i++)
+//	{
+//		int r = C[n][i];
+//		for (int j = 1; j <= m; j++)
+//		{
+//			r = (r * C[kin[j] + n - 1 - i][n - 1 - i]) % mod;
+//		}
+//		if (i % 2 == 1)ret = ((ret - r) % mod + mod) % mod;
+//		else ret = (ret + r) % mod;
+//	}
+//	cout << ret << endl;
+//	return 0;
+//}
 
 
 

@@ -22,56 +22,199 @@ typedef unsigned long long ull;
 #define y1 my_y1
 typedef pair<int, int> PII;
 
-int num[3][200010];
-int qianmax[3][200010];
-int qianmin[3][200010];
-int houmax[3][200010];
-int houmin[3][200010];
+
+int n; int m;
+int tu[600][600];
+int dpl[600][600];
+int dpr[600][600];
+int dx[4] = { 0,0,1,-1 };
+int dy[4] = { -1,1,0,0 };
+bool gone[600][600];
+void dfs(int i, int j)
+{
+	gone[i][j] = true;
+	for (int k = 0; k < 4; k++)
+	{
+		int x = i + dx[k];
+		int y = j + dy[k];
+		if (x<1 || x>m || y<1 || y>n || tu[x][y]>tu[i][j])continue;
+		if (!gone[x][y])dfs(x, y);
+		dpl[i][j] = min(dpl[i][j], dpl[x][y]);
+		dpr[i][j] = max(dpr[i][j], dpr[x][y]);
+	}
+}
+
+
 
 signed main()
 {
-	int T; cin >> T;
-	while (T--)
+	memset(dpl, 0x3f, sizeof(dpl));
+	cin >> n >> m;
+	for (int i = 1; i <= n; i++)
 	{
-		int n; cin >> n;
-		memset(qianmax, 0, sizeof(qianmax));
-		memset(qianmin, 0, sizeof(qianmin));
-		memset(houmax, 0, sizeof(houmax));
-		memset(houmin, 0, sizeof(houmin));
-		qianmin[1][0] = 0x3f3f3f3f;
-		qianmin[2][0] = 0x3f3f3f3f;
-		houmin[2][n+1] = 0x3f3f3f3f;
-		houmin[1][n + 1] = 0x3f3f3f3f;
-		for (int i = 1; i <= n; i++)
+		for (int j = 1; j <= m; j++)
 		{
-			cin >> num[1][i];
-			qianmax[1][i] = max(num[1][i], qianmax[1][i - 1]);
-			qianmin[1][i] = min(num[1][i], qianmin[1][i - 1]);
-		}
-		for (int i = 1; i <= n; i++)
-		{
-			cin >> num[2][i];
-			qianmax[2][i] = max(num[2][i], max(qianmax[2][i - 1],qianmax[1][i]));
-			qianmin[2][i] = min(num[2][i], min(qianmin[2][i - 1], qianmin[1][i]));
-		}
-		for (int i = n; i >= 1; i--)
-		{
-			houmax[2][i] = max(houmax[2][i + 1], num[2][i]);
-			houmin[2][i] = min(houmin[2][i + 1], num[2][i]);
-		}
-		for (int i = n; i >= 1; i--)
-		{
-			houmax[1][i] = max(max(houmax[1][i + 1],houmax[2][i]), num[2][i]);
-			houmin[1][i] = min(min(houmin[1][i + 1], houmin[2][i]), num[2][i]);
-		}
-		for (int i = 1; i <= n; i++)
-		{
-
+			cin >> tu[i][j];
 		}
 	}
-	
+	for (int i = 1; i = m; i++)
+	{
+		dpr[n][i] = dpl[n][i] = i;
+	}
+	for (int i = 1; i <= m; i++)
+	{
+		if(!gone[1][i])
+		dfs(1, i);
+	}
+	int flag = 1;
+	for (int i = 1; i <= m; i++)
+	{
+		if (!gone[n][i])
+		{
+			flag = 0; break;
+		}
+	}
+	if (flag == 0)
+	{
+		cout << 0 << endl;
+		return 0;
+	}
+	int x = 1;
+	int cnt = 0;
+	while (x <= m)
+	{
+		int right = 0;
+		fot(int i = 1; i <= m; i++)
+		{
+			if (dpl[n][i] <= x)right = max(right, dpr[n][i]);
+		}
+		cnt++;
+		x = right + 1;
+	}
+	cout << cnt << endl;
 	return 0;
 }
+
+
+
+
+
+
+//int read()
+//{
+//	int ret = 0;
+//	char ch = getchar();
+//	while (ch < '0' || ch>'9')ch = getchar();
+//	while (ch >= '0' && ch <= '9')
+//	{
+//		ret = ret * 10 + ch - '0';
+//		ch = getchar();
+//	}
+//	return ret;
+//
+//}
+//
+//void print(int s)
+//{
+//	if (s > 9)print(s / 10);
+//	putchar('0' + s % 10);
+//}
+//int n;
+//queue<int> qu1;
+//queue<int> qu2;
+//int num[100010];
+//signed main()
+//{
+//	n = read();
+//	for (int i = 1; i <= n; i++)
+//	{
+//		int s = read();
+//		num[s]++;
+//	}
+//	for (int i = 1; i <= 100000; i++)
+//	{
+//		while (num[i]--)
+//		{
+//			qu1.push(i);
+//		}
+//	}
+//	int ret = 0;
+//	for (int i = 1; i < n; i++)
+//	{
+//		int tmp[4] = { 0 };
+//		for (int j = 1; j <= 2; j++)
+//		{
+//			if ((qu2.empty()) || (!qu1.empty() && qu2.front() > qu1.front()))
+//			{
+//				tmp[j] = qu1.front();
+//				qu1.pop();
+//			}
+//			else
+//			{
+//				tmp[j] = qu2.front(); qu2.pop();
+//			}
+//		}
+//		qu2.push(tmp[1] + tmp[2]);
+//		ret += tmp[1] + tmp[2];
+//	}
+//	printf("%lld\n", ret);
+//	return 0;
+//}
+
+
+
+
+
+//int num[3][200010];
+//int qianmax[3][200010];
+//int qianmin[3][200010];
+//int houmax[3][200010];
+//int houmin[3][200010];
+//
+//signed main()
+//{
+//	int T; cin >> T;
+//	while (T--)
+//	{
+//		int n; cin >> n;
+//		memset(qianmax, 0, sizeof(qianmax));
+//		memset(qianmin, 0, sizeof(qianmin));
+//		memset(houmax, 0, sizeof(houmax));
+//		memset(houmin, 0, sizeof(houmin));
+//		qianmin[1][0] = 0x3f3f3f3f;
+//		qianmin[2][0] = 0x3f3f3f3f;
+//		houmin[2][n+1] = 0x3f3f3f3f;
+//		houmin[1][n + 1] = 0x3f3f3f3f;
+//		for (int i = 1; i <= n; i++)
+//		{
+//			cin >> num[1][i];
+//			qianmax[1][i] = max(num[1][i], qianmax[1][i - 1]);
+//			qianmin[1][i] = min(num[1][i], qianmin[1][i - 1]);
+//		}
+//		for (int i = 1; i <= n; i++)
+//		{
+//			cin >> num[2][i];
+//			qianmax[2][i] = max(num[2][i], max(qianmax[2][i - 1],qianmax[1][i]));
+//			qianmin[2][i] = min(num[2][i], min(qianmin[2][i - 1], qianmin[1][i]));
+//		}
+//		for (int i = n; i >= 1; i--)
+//		{
+//			houmax[2][i] = max(houmax[2][i + 1], num[2][i]);
+//			houmin[2][i] = min(houmin[2][i + 1], num[2][i]);
+//		}
+//		for (int i = n; i >= 1; i--)
+//		{
+//			houmax[1][i] = max(max(houmax[1][i + 1],houmax[2][i]), num[2][i]);
+//			houmin[1][i] = min(min(houmin[1][i + 1], houmin[2][i]), num[2][i]);
+//		}
+//		for (int i = 1; i <= n; i++)
+//		{
+//
+//		}
+//	}
+//	
+//	return 0;
+//}
 
 
 

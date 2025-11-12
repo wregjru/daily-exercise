@@ -1,0 +1,6 @@
+﻿  源.cpp
+E:\lianxi\daily-exercise\25.11.12.1\25.11.12.1\源.cpp(33,7): error C2039: "print": 不是 "std" 的成员
+      D:\visualstudio\VC\Tools\MSVC\14.44.35207\include\iomanip(22,1):
+      参见“std”的声明
+  
+E:\lianxi\daily-exercise\25.11.12.1\25.11.12.1\源.cpp(33,7): error C3861: “print”: 找不到标识符

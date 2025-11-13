@@ -23,41 +23,84 @@ typedef unsigned long long ull;
 typedef pair<int, int> PII;
 
 
-int mod = 1000000009;
-int dp[1010][1010][13];
-int n; int m; int K;
-int c1[1010];
-int c2[1010];
+void solve()
+{
+	int n; cin >> n;
+	vector<vector<int>> a(2, vector<int>(n));
+	for (int i = 1; i <= 2; i++)
+	{
+		for (int j = 1; j <= n; j++)
+		{
+			cin >> a[i][j];
+			a[i][j]--;
+		}
+	}
+	auto qmin = a[1],qmax = a[1], bmin = a[2], bmax = a[2];
+	for (int i = 2; i <= n; i++)qmin[i] = min(qmin[i], qmin[i - 1]);
+	for (int i = 2; i <= n; i++)qmax[i] = max(qmax[i], qmax[i - 1]);
+	for (int i = n - 1; i >= 1; i--)
+	{
+		bmax[i] = max(bmax[i + 1], bmax[i]);
+		bmin[i] = min(bmin[i + 1], bmin[i]);
+	}
+	vector<int>f(n, 0x3f3f3f3f);
+	for (int i = 1);
+}
+
+
+
+
 signed main()
 {
-	cin >> n >> m >> K;
-	for (int i = 0; i <= n; i++)
+	int T; cin >> T;
+	while (T--)
 	{
-		for (int j = 0; j <= m; j++)
-		{
-			dp[i][j][0] = 1;
-		}
+		solve();
 	}
-	for (int i = 1; i <= n; i++)cin >> c1[i];
-	for (int i = 1; i <= m; i++)cin >> c2[i];
-	sort(c1 + 1, c1 + 1 + n);
-	sort(c2 + 1, c2 + 1 + m);
-	for (int k = 1; k <= K; k++)
-	{
-		for (int i = 1; i <= n; i++)
-		{
-			for (int j = 1; j <= m; j++)
-			{
-				dp[i][j][k] = ((dp[i][j][k] - dp[i - 1][j - 1][k]) % mod + mod) % mod;
-				dp[i][j][k] = (dp[i][j][k] + dp[i - 1][j][k]) % mod;
-				dp[i][j][k] = (dp[i][j][k] + dp[i][j - 1][k]) % mod;
-				if (c1[i] > c2[j])dp[i][j][k] = (dp[i][j][k] + dp[i - 1][j - 1][k - 1]) % mod;
-			}
-		}
-	}
-	cout << dp[n][m][K] % mod << endl;
 	return 0;
 }
+
+
+
+
+
+
+
+//int mod = 1000000009;
+//int dp[1010][1010][13];
+//int n; int m; int K;
+//int c1[1010];
+//int c2[1010];
+//signed main()
+//{
+//	cin >> n >> m >> K;
+//	for (int i = 0; i <= n; i++)
+//	{
+//		for (int j = 0; j <= m; j++)
+//		{
+//			dp[i][j][0] = 1;
+//		}
+//	}
+//	for (int i = 1; i <= n; i++)cin >> c1[i];
+//	for (int i = 1; i <= m; i++)cin >> c2[i];
+//	sort(c1 + 1, c1 + 1 + n);
+//	sort(c2 + 1, c2 + 1 + m);
+//	for (int k = 1; k <= K; k++)
+//	{
+//		for (int i = 1; i <= n; i++)
+//		{
+//			for (int j = 1; j <= m; j++)
+//			{
+//				dp[i][j][k] = ((dp[i][j][k] - dp[i - 1][j - 1][k]) % mod + mod) % mod;
+//				dp[i][j][k] = (dp[i][j][k] + dp[i - 1][j][k]) % mod;
+//				dp[i][j][k] = (dp[i][j][k] + dp[i][j - 1][k]) % mod;
+//				if (c1[i] > c2[j])dp[i][j][k] = (dp[i][j][k] + dp[i - 1][j - 1][k - 1]) % mod;
+//			}
+//		}
+//	}
+//	cout << dp[n][m][K] % mod << endl;
+//	return 0;
+//}
 
 
 

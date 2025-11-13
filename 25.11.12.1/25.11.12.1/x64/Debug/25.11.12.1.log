@@ -1,6 +1,9 @@
 ﻿  源.cpp
-E:\lianxi\daily-exercise\25.11.12.1\25.11.12.1\源.cpp(33,7): error C2039: "print": 不是 "std" 的成员
-      D:\visualstudio\VC\Tools\MSVC\14.44.35207\include\iomanip(22,1):
-      参见“std”的声明
+E:\lianxi\daily-exercise\25.11.12.1\25.11.12.1\源.cpp(29,7): error C2955: “std::vector”: 使用 类 模板 需要 模板 参数列表
+      D:\visualstudio\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      参见“std::vector”的声明
   
-E:\lianxi\daily-exercise\25.11.12.1\25.11.12.1\源.cpp(33,7): error C3861: “print”: 找不到标识符
+E:\lianxi\daily-exercise\25.11.12.1\25.11.12.1\源.cpp(29,15): error C2514: “std::vector”: 无法构建类模板
+      D:\visualstudio\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      参见“std::vector”的声明
+  

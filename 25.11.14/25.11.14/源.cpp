@@ -23,62 +23,185 @@ typedef unsigned long long ull;
 typedef pair<int, int> PII;
 
 
-int f[100010];
 
-struct node
-{
-	int a; int b; int c;
-}e[100010],que[100010];
-int n; int m;
-int ret[100010];
-bool cmp1(node& a, node& b)
-{
-	return a.c > b.c;
-}
-bool cmp2(node& a, node& b)
-{
-	return a.a > b.a;
-}
-int cnt[100010];
+string a;
 
-int _find(int s)
+
+void solve()
 {
-	return s == f[s] ? s : f[s] = _find(f[s]);
+	cin >> a;
+	int n = a.size();
+	int l = 0, r = n;
+	while (l < n && a[l] == '<') l++;
+	while (r - 1 >= 0 && a[r - 1] == '>') r--;
+	if (l != r && l + 1 != r) 
+	{
+		cout << -1 << endl;
+		return;
+	}
+
+	int L = l;
+	int R = n - r;
+
+	int ret;
+	if (l == r) 
+	{
+		ret = max(L, R);
+	}
+	else 
+	{
+		ret = max(L, R) + 1;
+	}
+	cout << ret << endl;
+	/*int l = 0; int r = a.size();
+	while (a[l] == '<')l++;
+	while (a[r-1] == '>')r--;
+	if (l == r|| l + 1 == r)cout << max((int)a.size() - r + 1, l)<<endl;
+	else cout << -1 << endl;*/
+	/*if (l+1 == r||l>r)cout << max((int)a.size() - r, l) << endl;
+	else if (l == r)cout << 1 << endl;
+	else cout << -1 << endl;*/
+	/*if (a.size() == 1 && a[0] == '*')
+	{
+		cout << 1 << endl;
+		return;
+	}
+	int l = 0;
+	while (a[l] == '<')
+	{
+		l++;
+	}
+	int r = a.size() - 1;
+	while (a[r] == '>')
+	{
+		r--;
+	}
+	if (r+1 == l || r == l)
+	{
+		cout << max((int)a.size()-r, l) << endl;
+	}
+	else
+	{
+		cout << -1 << endl;
+	}*/
 }
+
+
+
 signed main()
 {
-	cin >> n >> m;
-	for (int i = 1; i < n; i++)cin >> e[i].a >> e[i].b >> e[i].c;
-	for (int i = 1; i <= m; i++)
+	int T;
+	cin >> T;
+	while (T--)
 	{
-		cin >> que[i].a >> que[i].b;//最短，b个节点
-		que[i].c = i;
+		solve();
 	}
-	sort(e + 1, e + n, cmp1);
-	sort(que + 1, que + m+1, cmp2);
-	int pos = 1;
-	for (int i = 1; i <= n; i++)f[i] = i;
-	for (int i = 1; i <= n; i++)cnt[i] = 1;
-	for (int j = 1; j <= m; j++)
-	{
-		int k = que[j].a; int v = que[j].b;
-		int i = que[j].c;//第i个问题，小于k的路，从v开始
-		for (; pos < n; pos++)
-		{
-			int a = e[pos].a; int b = e[pos].b; int c = e[pos].c;//a到b距离为c
-			if (c < k)break;
-			int fa = _find(a); int fb = _find(b);
-			if (fa != fb)
-			{
-				f[fa] = fb;
-				cnt[fb] += cnt[fa];
-			}
-		}
-		ret[i] = cnt[_find(v)] - 1;
-	}
-	for (int i = 1; i <= m; i++)cout << ret[i] << endl;
 	return 0;
 }
+
+
+
+
+
+
+
+
+//int n; int a;
+//int num[300010];
+//
+//void solve()
+//{
+//	cin >> n >> a;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		cin >> num[i];
+//	}
+//	sort(num + 1, num + 1 + n);
+//	int lsc = 0;
+//	int msc = 0; int rsc = 0;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		if (num[i] < a)lsc++;
+//		else if (num[i] > a)rsc++;
+//	}
+//	if (lsc > rsc)cout << a - 1 << endl;
+//	else cout << a + 1 << endl;
+//}
+//
+//
+//
+//signed main()
+//{
+//	int T;
+//	cin >> T;
+//	while (T--)
+//	{
+//		solve();
+//	}
+//	return 0;
+//}
+
+
+
+
+
+
+//int f[100010];
+//
+//struct node
+//{
+//	int a; int b; int c;
+//}e[100010],que[100010];
+//int n; int m;
+//int ret[100010];
+//bool cmp1(node& a, node& b)
+//{
+//	return a.c > b.c;
+//}
+//bool cmp2(node& a, node& b)
+//{
+//	return a.a > b.a;
+//}
+//int cnt[100010];
+//
+//int _find(int s)
+//{
+//	return s == f[s] ? s : f[s] = _find(f[s]);
+//}
+//signed main()
+//{
+//	cin >> n >> m;
+//	for (int i = 1; i < n; i++)cin >> e[i].a >> e[i].b >> e[i].c;
+//	for (int i = 1; i <= m; i++)
+//	{
+//		cin >> que[i].a >> que[i].b;//最短，b个节点
+//		que[i].c = i;
+//	}
+//	sort(e + 1, e + n, cmp1);
+//	sort(que + 1, que + m+1, cmp2);
+//	int pos = 1;
+//	for (int i = 1; i <= n; i++)f[i] = i;
+//	for (int i = 1; i <= n; i++)cnt[i] = 1;
+//	for (int j = 1; j <= m; j++)
+//	{
+//		int k = que[j].a; int v = que[j].b;
+//		int i = que[j].c;//第i个问题，小于k的路，从v开始
+//		for (; pos < n; pos++)
+//		{
+//			int a = e[pos].a; int b = e[pos].b; int c = e[pos].c;//a到b距离为c
+//			if (c < k)break;
+//			int fa = _find(a); int fb = _find(b);
+//			if (fa != fb)
+//			{
+//				f[fa] = fb;
+//				cnt[fb] += cnt[fa];
+//			}
+//		}
+//		ret[i] = cnt[_find(v)] - 1;
+//	}
+//	for (int i = 1; i <= m; i++)cout << ret[i] << endl;
+//	return 0;
+//}
 
 
 

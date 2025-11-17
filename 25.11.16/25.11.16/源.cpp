@@ -24,21 +24,62 @@ typedef pair<int, int> PII;
 
 
 int num[200010];
-
+int f[200010];
+int g[200010];
+int r[200010];
 void solve()
 {
 	int n; cin >> n;
-	for (int i = 1; i <= n; i++)cin >> num[i];
+	int M = 0;
+	for (int i = 0; i < n; i++)
+	{
+		cin >> num[i];
+		M = max(M, num[i]);
+	}
 	
-}
+	stack<int> st;
+	//ÕÒ´óµÄÔªËØ
+	for (int i = 0; i < 2*n; i++)
+	{
+		int t = i % n;
+		while (!st.empty() && num[st.top()] < num[t])
+		{
+			f[st.top()] = num[t];
+			st.pop();
+		}
+		st.push(t);
 
+	}
+	stack<int> st2;
+	for (int i = 2*n-1; i >=0; i--)
+	{
+		int t = i % n;
+		while (!st2.empty() && num[st2.top()] < num[t])
+		{
+			g[st2.top()] = num[t];
+			st2.pop();
+		}
+		st2.push(t);
+
+	}
+	for (int i = 0; i < n; i++)
+	{
+		r[i] = min(f[i], g[i]);
+	}
+	int ret = 0;
+	for (int i = 0; i < n; i++)
+	{
+		ret += r[i];
+	}
+	cout << ret << endl;
+}
 signed main()
 {
 	int T; cin >> T;
 	while (T--)solve();
 	return 0;
 }
-
+//1 5 5 3 7 6 2
 
 
 

@@ -38,7 +38,38 @@ int get1(int s)
 void solve()
 {
 	int n; int x; cin >> n >> x;
-	if (x == 0)
+	int num = get1(x);
+	int cha = n - num;
+	if (n <= num)cout << x << endl;
+	if (cha % 2 == 0)cout << x + cha << endl;
+	else
+	{
+		if (x > 1)
+		{
+			cout << x + cha + 1 << endl;
+			return;
+		}
+		if (x == 1)
+		{
+			cout << n+3 << endl;
+			return;
+		}
+		else
+		{
+			if (n == 1)
+			{
+				cout << -1 << endl;
+				return;
+			}
+			else
+			{
+				cout << n + 3 << endl;
+			}
+		}
+	}
+
+
+	/*if (x == 0)
 	{
 		if (n == 1)
 		{
@@ -64,6 +95,11 @@ void solve()
 	}
 	else
 	{
+		if (x == 1)
+		{
+			cout << n + 3 << endl;
+			return;
+		}
 		int cha = n - num;
 		if (cha == 1)
 		{
@@ -77,7 +113,7 @@ void solve()
 		{
 			cout << x + cha + 1 << endl;
 		}
-	}
+	}*/
 }
 
 

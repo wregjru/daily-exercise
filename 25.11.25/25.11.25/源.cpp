@@ -14,6 +14,7 @@
 #include <stack>
 #include<iomanip>
 #include <chrono>
+#include<random>
 using namespace std;
 //typedef __int128 ll;
 typedef long long ll;
@@ -24,6 +25,8 @@ typedef unsigned long long ull;
 typedef pair<int, int> PII;
 //ios::sync_with_stdio(false);
 //cin.tie(nullptr);
+using namespace std;
+
 
 
 int num[200010];
@@ -52,6 +55,7 @@ void solve()
 {
 	int n; cin >> n;
 	unordered_map<int, int, custom_hash> ma;
+	ma.reserve(n);
 	if (n == 1)
 	{
 		cout << 1 << endl;

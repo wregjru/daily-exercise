@@ -32,7 +32,10 @@ int n;
 
 bool check(int s)
 {
-
+	int m = s * s / 8 - 5 * s / 4;
+	int M = (s * s - 3 * s - 2) / 2;
+	if (m <= n && M >= n)return true;
+	return false;
 }
 
 
@@ -43,22 +46,28 @@ void solve()
 	int l = 1; int r = n;
 	while (l < r)
 	{
-		int mid = l + (r - l) / 2;
-		if (check(mid) < n)l = mid + 1;
-		else r = mid;
+		int mid = l + (r - l+1) / 2;
+		if (check(mid))l = mid;
+		else r = mid - 1;
 	}
+	/*while (l < r)
+	{
+		int mid = l + (r - l) / 2;
+		if (check(mid))r = mid;
+		else l = mid + 1;
+	}*/
 	cout << l << endl;
 }
 
 signed main()
 {
 	int t; cin >> t;
-	while (t == )solve();
+	while (t--)solve();
 	return 0;
 }
 
 
-
+//1 3
 
 
 

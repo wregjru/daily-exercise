@@ -28,8 +28,288 @@ typedef pair<int, int> PII;
 using namespace std;
 
 
+int a[200010];
+int b[200010];
+int k;
 
 
+void solve()
+{
+	int n; cin >> n; cin >> k;
+
+	for (int i = 1; i <= n; i++)
+	{
+		cin >> a[i];
+	}
+	for (int j = 1; j <= n; j++)
+	{
+		cin >> b[j];
+	}
+	sort(a + 1, a + 1 + n);
+	sort(b + 1, b + 1 + n);
+	int r = n;
+	int ret = 0;
+	for (int i = 1; i <= n; i++)
+	{
+		if (a[i] >= k)break;
+		int s = (double)(k - a[i]) / (double)(a[i] + 1);
+		while (r>0&&b[r] > s)
+			r--;//不能重复使用
+		if (r == 0)break;
+		else 
+		{
+			ret++;
+			r--;
+		}
+	}
+	cout << ret << endl;
+}
+
+
+signed main()
+{
+	int t; cin >> t;
+	while (t--)solve();
+	return 0;
+}
+
+
+
+
+
+//int a[200010];
+//int b[200010];
+//bool used[200010];
+//
+//
+//int k;
+//bool check(int s, int ai)
+//{
+//	return ai * (s + 1) + 1 <= k;
+//}
+//
+//void solve()
+//{
+//	int n; cin >> n;
+//	cin >> k;
+//	for (int i = 1; i <= n; i++)used[i] = 0;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		cin >> a[i];
+//	}
+//	for (int i = 1; i <= n; i++)
+//	{
+//		cin >> b[i];
+//	}
+//	sort(a + 1, a + 1 + n); sort(b + 1, b + 1 + n);
+//	int ret = 0;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		int l= 1; int r = n;
+//		while (l < r)
+//		{
+//			int m = (l + r) / 2;
+//			if (check(b[m], a[i]))r = m;
+//			else l = m+1;
+//		}
+//		while (used[l])l--;
+//		if(check(b[l],a[i])&&used[l]==false)
+//		{
+//			used[l] = true;
+//			ret++;
+//		}
+//	}
+//	cout << ret << endl;
+//}
+//
+//
+//signed main()
+//{
+//	int t; cin >> t;
+//	while (t--)solve();
+//	return 0;
+//}
+
+
+/*
+1
+3 10
+5 6 5
+7 1 7
+
+1
+5 42
+5 4 2 2 1
+9 8 9 8 100
+
+*/
+
+
+
+//int num[110][110];
+//
+//void solve()
+//{
+//	int n;
+//	cin >> n;
+//	int ans = 0;
+//	for (int i = 0; i < n; i++)
+//	{
+//		for (int j = 0; j < n; j++)
+//		{
+//			int c = i * n + j + 1;
+//			if (i > 0) c += (i - 1) * n + j + 1;
+//			if (i < n - 1) c += (i + 1) * n + j + 1;
+//			if (j > 0) c += i * n + j;
+//			if (j < n - 1) c += i * n + j + 2;
+//			ans = max(ans, c);
+//		}
+//	}
+//	cout << ans << endl;
+//}
+//
+//
+//signed main()
+//{
+//	int t;
+//	cin >> t;
+//	while (t--) 
+//	{
+//		solve();
+//	}
+//	return 0;
+//}
+
+
+//int num[110][110]
+//void solve()
+//{
+//	int n; cin >> n;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		for (int j = 1; j <= n; j++)
+//		{
+//
+//		}
+//	}
+//}
+//
+//
+//signed main()
+//{
+//	int t; cin >> t;
+//	while (t--)solve();
+//}
+
+//int n;
+//int b[200010];
+//void solve()
+//{
+//	cin >> n;
+//	for (int i = 1; i <= n; i++);
+//	for (int i = 1; i <= n; i++)
+//	{
+//		cin >> b[i];
+//	}
+//	sort(b + 1, b + 1 + n);
+//	int q = 0;
+//	if (b[n] == n)
+//	{
+//		for (int i = 1; i <= n; i++)
+//		{
+//			if (b[i] != 0)
+//			{
+//				q = i;
+//				break;
+//			}
+//		}
+//		cout << (n - q + 1) << endl;
+//		return;
+//	}
+//	else
+//	{
+//		int sum = 0;
+//		for (int i = n; i >= 1; i--)
+//		{
+//			sum += max((int)0,b[i] - 1);
+//		}
+//		int ret = 0;
+//		if (sum >= n - 1)
+//		{
+//			int p = 0;
+//			for (int i = 1; i <= n; i++)
+//			{
+//				if (b[i] != 0)
+//				{
+//					p = i;
+//					break;
+//				}
+//			}
+//			cout << n-p+1 << endl;
+//		}
+//		else
+//		{
+//			int k = n-sum;
+//			int p = 0;
+//			for (int i = 1; i <= n; i++)
+//			{
+//				if (b[i] != 0)
+//				{
+//					k--;
+//					if (k == 1)
+//					{
+//						p = i; break;
+//					}
+//				}
+//			}
+//			cout << (n - p) << endl;
+//		}
+//	}
+//	
+//	
+//}
+//
+//
+//signed main()
+//{
+//	int t; cin >> t;
+//	while (t--)solve();
+//	return 0;
+//}
+
+
+
+
+
+
+
+//1 5 0 0 0 0 6
+
+
+//string a;
+//void solve()
+//{
+//	int n;
+//	a = " ";
+//	int mp = 0;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		int s; cin >> s;
+//		if (s == n)mp = i;
+//		a += to_string(s);
+//	}
+//	for (int i = 1; i <= mp; i++)
+//	{
+//
+//	}
+//}
+//
+//signed main()
+//{
+//	int t; cin >> t;
+//	while (t--)solve();
+//	return 0;
+//}
 
 
 

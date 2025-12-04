@@ -29,38 +29,39 @@ using namespace std;
 
 
 
-int num[200010];
-int dp[200010];
 
 void solve()
 {
 	int n; cin >> n;
+	map<ll, vector<ll>> tu;
 	for (int i = 1; i <= n; i++)
 	{
-		cin >> num[i];
-		dp[i] = 0;
+		int s; cin >> s;
+		int a = s+i-1;
+		int b = a + i - 1;
+		if (a >= b)continue;
+		tu[a].push_back(b);
 	}
-	int k = (n+1) / 2;
-	int l = 0; int r = 0;
-	int ret = 0;
-	if (n % 2 == 1)
+	int ret = n;
+	queue<int> qu;
+	qu.push(n);
+	unordered_map<int, bool> gone;
+	gone[n] = 1;
+	while (!qu.empty())
 	{
-		r=l = n / 2 + 1;
-		
+		int s = qu.front();
+		gone[s] = 1;
+		qu.pop();
+		for (int i = 0; i < tu[s].size(); i++)
+		{
+			
+			int p = tu[s][i];
+			if (gone[p])continue;
+			ret = max(ret, p);
+			qu.push(p);
+		}
 	}
-	else
-	{
-		l = n / 2;
-		r = n / 2 + 1;
-		if (num[l] == num[r])ret++;
-	}
-	for (int i = 1; i <= (n-1)/2; i++)
-	{
-		int c = min((num[l - 1] == num[l] ? 1 : 0) + (num[r + 1] == num[r] ? 1 : 0), (num[l - 1] == num[r] ? 1 : 0) + (num[r + 1] == num[l] ? 1 : 0));
-		dp[i + 1] = dp[i] + c;
-		l--; r++;
-	}
-	cout << dp[(n + 1) / 2]+ret << endl;
+	cout << ret << endl;
 }
 
 
@@ -70,6 +71,107 @@ signed main()
 	while (t--)solve();
 	return 0;
 }
+
+
+
+
+//int num[300010];
+//int last[300010];
+//int ret;
+//unordered_map<int, int>ma;
+//int dist;
+//void dfs(int s)
+//{
+//	if (ma[dist]==0)
+//	{
+//		ret = max(ret, dist);
+//		return;
+//	}
+//	int t = ma[dist];
+//	dist += (t - 1);
+//	ma[dist] = 0;
+//	dfs(t);
+//	ma[dist] = t;
+//	dist -= (t - 1);
+//}
+//
+//void solve()
+//{
+//	int n; cin >> n;
+//	ret = 0; dist = 0;
+//	ma.clear();
+//	for (int i = 1; i <= n; i++)
+//	{
+//		cin >> num[i];
+//		last[i] = (n + 1) - num[i];
+//		ma[last[i]] = i - 1;
+//	}
+//
+//	for (int i = 1; i <= n; i++)
+//	{
+//		if (last[i] == 0)
+//		{
+//			dist += (i - 1);
+//			dfs(i);
+//			dist -= (i - 1);
+//		}
+//	}
+//	cout << ret << endl;
+//	
+//}
+//
+//signed main()
+//{
+//	int t; cin >> t;
+//	while (t--)solve();
+//	return 0;
+//}
+
+
+
+
+
+//int num[200010];
+//int dp[200010];
+//
+//void solve()
+//{
+//	int n; cin >> n;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		cin >> num[i];
+//		dp[i] = 0;
+//	}
+//	int k = (n+1) / 2;
+//	int l = 0; int r = 0;
+//	int ret = 0;
+//	if (n % 2 == 1)
+//	{
+//		r=l = n / 2 + 1;
+//		
+//	}
+//	else
+//	{
+//		l = n / 2;
+//		r = n / 2 + 1;
+//		if (num[l] == num[r])ret++;
+//	}
+//	for (int i = 1; i <= (n-1)/2; i++)
+//	{
+//		int c = min((num[l - 1] == num[l] ? 1 : 0) + (num[r + 1] == num[r] ? 1 : 0), (num[l - 1] == num[r] ? 1 : 0) + (num[r + 1] == num[l] ? 1 : 0));
+//		dp[i + 1] = dp[i] + c;
+//		l--; r++;
+//	}
+//	cout << dp[(n + 1) / 2]+ret << endl;
+//}
+//
+//
+//signed main()
+//{
+//	int t; cin >> t;
+//	while (t--)solve();
+//	return 0;
+//}
 
 
 

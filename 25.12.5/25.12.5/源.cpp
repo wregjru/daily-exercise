@@ -26,62 +26,67 @@ typedef pair<int, int> PII;
 //cin.tie(nullptr);
 
 
-
-
+int num[200010];
+bool used[200010];
+int ret[200010];
+int pos;
 void solve()
 {
-	int n; int k; int m;
-	cin >> n >> k >> m;
-	string s; cin >> s;
-	s = " " + s;
-	int tmp[30] = { 0 };
-	int cnt = 0;
-	int c = 0;
-	string ret;
-	for (int i = 1; i <= m; i++)
+	int n; int k;
+	cin >> n >> k;
+	int M = 0;
+	pos = 0;
+	for (int i = 1; i <= n; i++)
 	{
-		if (tmp[s[i] - 'a'] == 0)
-		{
-			cnt++;
-			tmp[s[i] - 'a']++;
-		}
-		if (cnt == k)
-		{
-			cnt = 0;
-			c++;
-			for (int i = 0; i <= 29; i++)
-			{
-				tmp[i] = 0;
-			}
-			ret += s[i];
-		}
+		num[i] = used[i] = 0;
 	}
-	if (ret.size() < n)
+	unordered_map<int, int> ma;
+	for (int i = 1; i <= n; i++)
 	{
-		for (int i = 0; i < k; i++)
+		cin >> num[i];
+		M = max(M, num[i]);
+		ma[num[i]] = i;
+	}
+
+	//sort(num + 1, num + 1 + n);
+	for (int i = 1; i <= n; i++)
+	{
+		int flag = 0;
+		for (int j = 1; j <= k / num[i]; j++)
 		{
-			if (tmp[i] == 0)
+			if (ma[j * num[i]] == 0)
 			{
-				ret += ('a' + i);
-				break;
+				cout << -1 << endl;
+				return;
+			}
+			else
+			{
+				if (used[ma[j*num[i]]] == 0) flag = 1;
+				used[ma[j*num[i]]] = 1;
 			}
 		}
+		if (flag == 1)ret[++pos] = num[i];
 	}
-	while (ret.size() < n)
+	int fl = 1;
+	for (int i = 1; i <= n; i++)
 	{
-		ret += 'a';
+		if (used[i] == 0)fl = 0;
 	}
-	if (c < n)
+	if (fl == 0)
 	{
-		cout << "NO" << endl;
-		cout << ret << endl;
+		cout << -1 << endl;
 	}
 	else
 	{
-		cout << "YES" << endl;
+		cout << pos << endl;
+		sort(ret + 1, ret + pos + 1);
+		for (int i = 1; i <= pos; i++)
+		{
+			cout << ret[i] << " ";
+		}
+		cout << endl;
 	}
 }
-
 
 
 signed main()
@@ -90,6 +95,154 @@ signed main()
 	while (t--)solve();
 	return 0;
 }
+
+
+
+
+//int f[100010];//最小值
+//int g[100010];//最大值
+//int num1[100010];
+//int num2[100010];
+//void solve()
+//{
+//	int n; cin >> n;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		cin >> num1[i];
+//		f[i] = g[i] = 0;
+//	}
+//	for (int i = 1; i <= n; i++)
+//	{
+//		cin >> num2[i];
+//	}
+//	for (int i = 1; i <= n; i++)
+//	{
+//		f[i] = max(f[i - 1] - num1[i], num2[i] - g[i-1]);
+//		g[i] = min(g[i - 1] - num1[i], num2[i] - f[i - 1]);
+//	}
+//	cout << f[n] << endl;
+//}
+//
+//
+//signed main()
+//{
+//	int t; cin >> t;
+//	while (t--)solve();
+//
+//	return 0;
+//}
+
+//struct node
+//{
+//	int l; int r;
+//}tu[110];
+//int pos;
+//
+//void solve()
+//{
+//	int n; int k;
+//	cin >> n >> k;
+//	pos = 0;
+//	string s; cin >> s;
+//	s = " " + s;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		if (s[i] == '1')
+//		{
+//			tu[++pos].l = i;
+//			tu[pos].r = min(i + k,n);
+//		}
+//	}
+//	string rett(n + 1, '0');
+//	for (int i = 1; i <= pos; i++)
+//	{
+//		for (int j = tu[i].l; j <= tu[i].r; j++)
+//		{
+//			rett[j] = '1';
+//		}
+//	}
+//	int r = 0;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		if (rett[i] == '0')r++;
+//	}
+//	cout << r << endl;
+//}
+//
+//
+//signed main()
+//{
+//	int t; cin >> t;
+//	while (t--)solve();
+//	return 0;
+//}
+
+
+
+
+
+//void solve()
+//{
+//	int n; int k; int m;
+//	cin >> n >> k >> m;
+//	string s; cin >> s;
+//	s = " " + s;
+//	int tmp[30] = { 0 };
+//	int cnt = 0;
+//	int c = 0;
+//	string ret;
+//	for (int i = 1; i <= m; i++)
+//	{
+//		if (tmp[s[i] - 'a'] == 0)
+//		{
+//			cnt++;
+//			tmp[s[i] - 'a']++;
+//		}
+//		if (cnt == k)
+//		{
+//			cnt = 0;
+//			c++;
+//			for (int i = 0; i <= 29; i++)
+//			{
+//				tmp[i] = 0;
+//			}
+//			ret += s[i];
+//		}
+//	}
+//	if (ret.size() < n)
+//	{
+//		for (int i = 0; i < k; i++)
+//		{
+//			if (tmp[i] == 0)
+//			{
+//				ret += ('a' + i);
+//				break;
+//			}
+//		}
+//	}
+//	while (ret.size() < n)
+//	{
+//		ret += 'a';
+//	}
+//	if (c < n)
+//	{
+//		cout << "NO" << endl;
+//		cout << ret << endl;
+//	}
+//	else
+//	{
+//		cout << "YES" << endl;
+//	}
+//}
+//
+//
+//
+//signed main()
+//{
+//	int t; cin >> t;
+//	while (t--)solve();
+//	return 0;
+//}
 
 
 //void solve()

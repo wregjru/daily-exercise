@@ -26,85 +26,62 @@ typedef pair<int, int> PII;
 //cin.tie(nullptr);
 
 
-
-int num[200010];
-struct node
+int weishu(int s)
 {
-	int bl;
-	int ge;
-}sow[200010], zeo[200010],nzeo[200010];
-int pos;
-int pos2;
-
-
-bool cmp2(node& a, node& b)
-{
-	if(a.bl!=b.bl)
-	return a.bl < b.bl;
-	return a.ge < b.ge;
+	int ret = 0;
+	while (s)
+	{
+		ret++;
+		s >>= 1;
+	}
+	return ret;
 }
+
+string tos(int n)
+{
+	string ret;
+	while (n)
+	{
+		ret += '0' + (n & 1);
+		n >>= 1;
+	}
+	return ret;
+}
+
 void solve()
 {
 	int n; cin >> n;
-	int k; cin >> k;
-	multiset<int> se;
-	pos = pos2 = 0;
-	for (int i = 1; i <= n; i++)
+	if (n == 0)
 	{
-		cin >> num[i];
-		se.insert(num[i]);
+		cout << "YES" << endl;
+		return;
 	}
-	for (int i = 1; i <= k; i++)
+	while (n % 2 == 0)
 	{
-		cin >> sow[i].bl;
+		n /= 2;
 	}
-	for (int i = 1; i <= k; i++)
+	int p = weishu(n);
+	
+	string num = tos(n);
+	int l = 0; int r = num.size() - 1;
+	while (r > l)
 	{
-		cin >> sow[i].ge;
-	}
-
-	int ret = 0;
-	//priority_queue<int, vector<int>, cmp> heap;
-	sort(num + 1, num + n + 1);
-	sort(sow + 1, sow + 1 + k, cmp2);
-
-	for (int i = 1; i <= k; i++)
-	{
-		if (sow[i].ge == 0)
+		if (num[l] != num[r])
 		{
-			nzeo[++pos2].bl = sow[i].bl;
-			nzeo[pos2].ge = sow[i].ge;
+			cout << "NO" << endl;
+			return;
 		}
-		else
+		l++; r--;
+	}
+	if (num.size() % 2 == 1)
+	{
+		if (num[(num.size() - 1) / 2] == '1')
 		{
-			zeo[++pos].bl = sow[i].bl;
-			zeo[pos].ge = sow[i].ge;
+			cout << "NO" << endl;
+			return;
 		}
 	}
-	for (int i = 1; i <= pos; i++)
-	{
-		auto it = se.lower_bound(zeo[i].bl);
-		//--it;
-		int t = *it;
-		if (it == se.end())
-		{
-			continue;
-		}
-		se.erase(it);
-		ret++;
-		se.insert(max(t,zeo[i].ge));
-	}
-	for (int i = 1; i <= pos2; i++)
-	{
-		auto it = se.lower_bound(nzeo[i].bl);
-		if (it == se.end())
-		{
-			continue;
-		}
-		se.erase(it);
-		ret++;
-	}
-	cout << ret << endl;
+	cout << "YES" << endl;
 }
 
 
@@ -115,6 +92,98 @@ signed main()
 	while (t--)solve();
 	return 0;
 }
+
+
+
+
+//int num[200010];
+//struct node
+//{
+//	int bl;
+//	int ge;
+//}sow[200010], zeo[200010],nzeo[200010];
+//int pos;
+//int pos2;
+//
+//
+//bool cmp2(node& a, node& b)
+//{
+//	if(a.bl!=b.bl)
+//	return a.bl < b.bl;
+//	return a.ge < b.ge;
+//}
+//void solve()
+//{
+//	int n; cin >> n;
+//	int k; cin >> k;
+//	multiset<int> se;
+//	pos = pos2 = 0;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		cin >> num[i];
+//		se.insert(num[i]);
+//	}
+//	for (int i = 1; i <= k; i++)
+//	{
+//		cin >> sow[i].bl;
+//	}
+//	for (int i = 1; i <= k; i++)
+//	{
+//		cin >> sow[i].ge;
+//	}
+//
+//	int ret = 0;
+//	//priority_queue<int, vector<int>, cmp> heap;
+//	sort(num + 1, num + n + 1);
+//	sort(sow + 1, sow + 1 + k, cmp2);
+//
+//	for (int i = 1; i <= k; i++)
+//	{
+//		if (sow[i].ge == 0)
+//		{
+//			nzeo[++pos2].bl = sow[i].bl;
+//			nzeo[pos2].ge = sow[i].ge;
+//		}
+//		else
+//		{
+//			zeo[++pos].bl = sow[i].bl;
+//			zeo[pos].ge = sow[i].ge;
+//		}
+//	}
+//	for (int i = 1; i <= pos; i++)
+//	{
+//		auto it = se.lower_bound(zeo[i].bl);
+//		//--it;
+//		int t = *it;
+//		if (it == se.end())
+//		{
+//			continue;
+//		}
+//		se.erase(it);
+//		ret++;
+//		se.insert(max(t,zeo[i].ge));
+//	}
+//	for (int i = 1; i <= pos2; i++)
+//	{
+//		auto it = se.lower_bound(nzeo[i].bl);
+//		if (it == se.end())
+//		{
+//			continue;
+//		}
+//		se.erase(it);
+//		ret++;
+//	}
+//	cout << ret << endl;
+//}
+//
+//
+//
+//signed main()
+//{
+//	int t; cin >> t;
+//	while (t--)solve();
+//	return 0;
+//}
 
 
 

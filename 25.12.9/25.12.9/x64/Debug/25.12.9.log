@@ -1,0 +1,17 @@
+﻿  源.cpp
+E:\lianxi\daily-exercise\25.12.9\25.12.9\源.cpp(82,24): warning C4267: “参数”: 从“size_t”转换到“_Elem”，可能丢失数据
+E:\lianxi\daily-exercise\25.12.9\25.12.9\源.cpp(82,24): warning C4267:         with
+E:\lianxi\daily-exercise\25.12.9\25.12.9\源.cpp(82,24): warning C4267:         [
+E:\lianxi\daily-exercise\25.12.9\25.12.9\源.cpp(82,24): warning C4267:             _Elem=char
+E:\lianxi\daily-exercise\25.12.9\25.12.9\源.cpp(82,24): warning C4267:         ]
+E:\lianxi\daily-exercise\25.12.9\25.12.9\源.cpp(97,24): warning C4267: “参数”: 从“size_t”转换到“_Elem”，可能丢失数据
+E:\lianxi\daily-exercise\25.12.9\25.12.9\源.cpp(97,24): warning C4267:         with
+E:\lianxi\daily-exercise\25.12.9\25.12.9\源.cpp(97,24): warning C4267:         [
+E:\lianxi\daily-exercise\25.12.9\25.12.9\源.cpp(97,24): warning C4267:             _Elem=char
+E:\lianxi\daily-exercise\25.12.9\25.12.9\源.cpp(97,24): warning C4267:         ]
+E:\lianxi\daily-exercise\25.12.9\25.12.9\源.cpp(112,24): warning C4267: “参数”: 从“size_t”转换到“_Elem”，可能丢失数据
+E:\lianxi\daily-exercise\25.12.9\25.12.9\源.cpp(112,24): warning C4267:         with
+E:\lianxi\daily-exercise\25.12.9\25.12.9\源.cpp(112,24): warning C4267:         [
+E:\lianxi\daily-exercise\25.12.9\25.12.9\源.cpp(112,24): warning C4267:             _Elem=char
+E:\lianxi\daily-exercise\25.12.9\25.12.9\源.cpp(112,24): warning C4267:         ]
+  25.12.9.vcxproj -> E:\lianxi\daily-exercise\25.12.9\x64\Debug\25.12.9.exe

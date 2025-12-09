@@ -28,11 +28,27 @@ typedef pair<int, int> PII;
 
 int num[5010];
 
+int gcd(int a, int b)
+{
+	return b == 0 ? a : gcd(b, a % b);
+}
+
+
+
 
 void solve()
 {
 	int n; cin >> n;
-
+	for (int i = 1; i <= n; i++)
+	{
+		cin >> num[i];
+	}
+	int g = num[1];
+	for (int i = 2; i <= n; i++)
+	{
+		g = gcd(g, num[i]);
+	}
+	for()
 }
 
 

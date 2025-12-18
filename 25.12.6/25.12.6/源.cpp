@@ -27,20 +27,48 @@ typedef pair<int, int> PII;
 
 
 
-bool isPalindrome(int x)
+vector<int> getConcatenation(vector<int>& nums)
 {
-    string a = to_string(x);
-    string b = a;
-    reverse(b.begin(), b.begin());
-    return a == b;
+    vector<int>ret;
+    ret.reserve(2 * nums.size() + 10);
+    int n = nums.size();
+    for (int i = 0; i < 2 * n; i++)
+    {
+        ret.push_back(0);
+    }
+    for (int i = 0; i < nums.size(); i++)
+    {
+        ret[i] = ret[i + n] = nums[i];
+    }
+    return ret;
 }
 
 
 int main()
 {
-    isPalindrome(10);
-	return 0;
+    vector<int> v = { 1,4,2,1 };
+    getConcatenation(v);
+    return 0;
 }
+
+
+
+
+
+//bool isPalindrome(int x)
+//{
+//    string a = to_string(x);
+//    string b = a;
+//    reverse(b.begin(), b.begin());
+//    return a == b;
+//}
+//
+//
+//int main()
+//{
+//    isPalindrome(10);
+//	return 0;
+//}
 
 
 

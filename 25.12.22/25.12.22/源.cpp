@@ -28,36 +28,75 @@ typedef pair<int, int> PII;
 
 
 
-vector<vector<string>> groupAnagrams(vector<string>& strs)
-{
-    vector<string>s = strs;
-    int n = strs.size();
-    unordered_map<string, int> ma;
-    int pos = 0;
-    vector<vector<string>> vv;
-    vector<string> v;
-    for (int i = 0; i < n; i++)
-    {
-        sort(s[i].begin(), s[i].end());
-        if (ma[s[i]] == 0)
-        {
-            ma[s[i]] = (++pos);
-            vv.push_back(v);
-            vv[pos - 1].push_back(strs[i]);
-        }
-        else
-        {
-            vv[ma[s[i]] - 1].push_back(strs[i]);
-        }
-    }
-    return vv;
 
+
+int longestConsecutive(vector<int>& num)
+{
+    unordered_map<int, int> ma;
+    for (int i = 0; i < num.size(); i++)
+    {
+        ma[num[i]]++;
+    }
+    vector<int> v;
+    for (auto& e : ma)
+    {
+        int i = e.second; int j = e.first;
+        for (int k = 0; k < i; k++)
+            v.push_back(j);
+    }
+    int sss = 0;
+    return sss;
 }
 
 
 signed main()
 {
-    vector<string> v = { "eat", "tea", "tan", "ate", "nat", "bat" };
-    groupAnagrams(v);
+    vector<int> v = { 100,4,200,1,3,2 };
+    longestConsecutive(v);
     return 0;
 }
+
+
+
+
+
+
+//vector<vector<string>> groupAnagrams(vector<string>& strs)
+//{
+//    vector<string>s = strs;
+//    int n = strs.size();
+//    unordered_map<string, int> ma;
+//    int pos = 0;
+//    vector<vector<string>> vv;
+//    vector<string> v;
+//    for (int i = 0; i < n; i++)
+//    {
+//        sort(s[i].begin(), s[i].end());
+//        if (ma[s[i]] == 0)
+//        {
+//            ma[s[i]] = (++pos);
+//            vv.push_back(v);
+//            vv[pos - 1].push_back(strs[i]);
+//        }
+//        else
+//        {
+//            vv[ma[s[i]] - 1].push_back(strs[i]);
+//        }
+//    }
+//    return vv;
+//
+//}
+//
+//
+//signed main()
+//{
+//    vector<string> v = { "eat", "tea", "tan", "ate", "nat", "bat" };
+//    groupAnagrams(v);
+//    return 0;
+//}
+
+
+
+
+
+

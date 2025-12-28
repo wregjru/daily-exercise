@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\lianxi\\daily-exercise\\25.12.28\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1DD21096-5599-4D44-B7DB-59634E9F9330}|25.12.28\\25.12.28.vcxproj|E:\\lianxi\\daily-exercise\\25.12.28\\25.12.28\\\u6E90.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1DD21096-5599-4D44-B7DB-59634E9F9330}|25.12.28\\25.12.28.vcxproj|solutionrelative:25.12.28\\\u6E90.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "\u6E90.cpp",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\25.12.28\\25.12.28\\\u6E90.cpp",
+              "RelativeDocumentMoniker": "25.12.28\\\u6E90.cpp",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\25.12.28\\25.12.28\\\u6E90.cpp*",
+              "RelativeToolTip": "25.12.28\\\u6E90.cpp*",
+              "ViewState": "AgIAADsAAAAAAAAAAAD4v0QAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-28T12:11:01.342Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

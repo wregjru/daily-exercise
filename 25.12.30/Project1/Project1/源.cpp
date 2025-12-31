@@ -67,6 +67,7 @@ public:
 
 Node* root;
 vector<vector<int>> tu;
+vector<vector<int>> dp;
 void merge(int a1, int b1, int a2, int b2, Node*& root)
 {
     int p = tu[a1][b1];
@@ -74,7 +75,7 @@ void merge(int a1, int b1, int a2, int b2, Node*& root)
     if (a2 < a1 || b2 < b1)return;
     if (a1 == a2)
     {
-        root = new Node(tu[a1][b1], 0);
+        root = new Node(tu[a1][b1], 1);
         return;
     }
     for (int i = a1; i <= a2; i++)
@@ -95,7 +96,7 @@ void merge(int a1, int b1, int a2, int b2, Node*& root)
     }
     else
     {
-        root = new Node;
+        root = new Node(1, 0);
         merge(a1, b1, (a1 + a2) / 2, (b1 + b2) / 2, root->topLeft);
         merge(a1, (b1 + b2) / 2+1, (a1 + a2) / 2, b2, root->topRight);
         merge((a1 + a2) / 2+1, b1, a2, (b1 + b2) / 2, root->bottomLeft);
@@ -106,6 +107,15 @@ Node* construct(vector<vector<int>>& grid)
 {
     tu = grid;
     int n = grid.size();
+    vector<vector<int>> d(n + 2, vector<int>(n + 2, 0));
+    dp = d;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            dp[i + 1][j + 1] = dp[i + 1][j] + dp[i][j + 1] - dp[i][j] + tu[i + 1][j + 1];
+        }
+    }
     merge(0, 0, n - 1, n - 1, root);
     return root;
 }

@@ -27,43 +27,164 @@ typedef pair<int, int> PII;
 
 
 
-int minimumTotal(vector<vector<int>>& tri)
+int findMaxVal(int n, vector<vector<int>>& res, vector<int>& diff)
 {
-    int m = tri.size();
-    int n = tri[m - 1].size();
-    vector<vector<int>> dp(m, vector<int>(n, 0x3f3f3f3f));
-    dp[0][0] = tri[0][0];
-    for (int i = 1; i < m; i++)
+    vector<int> ma(n+5, 0);
+    vector<int>mi(n+5, 0);
+    vector<int> rest(n+5, 0x3f3f3f3f);
+    for (int i = 0; i < res.size(); i++)
     {
-        for (int j = 0; j < tri[i].size(); j++)
-        {
-            int x = i - 1; int y = j;
-            if (tri[x].size() > j)
-            {
-                dp[i][j] = min(dp[i][j], dp[x][y] + tri[i][j]);
-            }
-            y--;
-            if (y>=0&&tri[x].size() > y)
-            {
-                dp[i][j] = min(dp[i][j], dp[x][y] + tri[i][j]);
-            }
-        }
+        rest[res[i][0]] = res[i][1];
     }
-    int ret = 0x3f3f3f3f;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n-2; i++)
     {
-        ret = min(ret, dp[m-1][i]);
+        ma[i + 1] = min(rest[i+1], ma[i] + diff[i]);
+        mi[i + 1] = max(0, mi[i] - diff[i]);
+    }
+    for (int i = n - 3; i >=0; i--)
+    {
+        ma[i] = min(rest[i], ma[i+1] + diff[i]);
+        mi[i] = max(0, mi[i+1] - diff[i]);
+    }
+    int ret = 0;
+    for (int i = 0; i < n - 2; i++)
+    {
+        ret = max(ret, ma[i]);
+
     }
     return ret;
 
+
+
+   /* int ret = 0;
+    for (int i = 0; i < res.size(); i++)
+    {
+        int r = res[i][0];
+        int l = 0;
+        int d = 0;
+        if (i == 0)
+        {
+            l = 0;
+            d = res[i][1];
+        }
+        else
+        {
+            l = res[i - 1][0];
+            d = res[i][1] - res[i - 1][1];
+        }
+        
+        vector<int> tmp;
+        int sum = 0;
+        int j = 0;
+        if (l == 0)j = 0;
+        else j = l+1;
+        for (int k=j; k < r; k++)
+        {
+            tmp.push_back(diff[k]);
+            sum += tmp[tmp.size()-1];
+        }
+        sort(tmp.begin(), tmp.end());
+        int p = 0;
+        while (sum > d)
+        {
+            sum -= 2*tmp[p];
+            p++;
+            if (sum <= d)
+            {
+                ret = max(ret, sum);
+            }
+        }
+        return ret;
+
+    }*/
 }
+
+
+
+
+
+
+//int minLength(vector<int>& nums, int k)
+//{
+//    int l = 0; int r = 0;
+//    int sum = 0;
+//    int ret = 0x3f3f3f3f;
+//    unordered_map<int, int> ma;
+//    while (r < nums.size())
+//    {
+//        if (ma[nums[r]]== 0)
+//        sum += nums[r];
+//        ma[nums[r]]++;
+//        r++;
+//        while (l<r && sum>=k)
+//        {
+//            ret = min(ret, r - l);
+//            ma[nums[l]]--;
+//            if (ma[nums[l]] == 0)
+//            {
+//                ma.erase(nums[l]);
+//            }
+//            if(!ma.count(nums[l]))
+//            sum -= nums[l];
+//            l++;
+//
+//        }
+//    }
+//    if (ret == 0x3f3f3f3f)return -1;
+//    return ret;
+//}
+
 
 signed main()
 {
-    vector<vector<int>> vv = { {2},{3,4},{6,5,7},{4,1,8,3} };
-    minimumTotal(vv);
+    vector<vector<int>> vv = { {3,1},{8,1} };
+    vector<int> v = { 2,2,3,1,4,5,1,1,2 };
+    cout<<findMaxVal(10, vv, v);
     return 0;
 }
+
+
+
+
+
+
+//int minimumTotal(vector<vector<int>>& tri)
+//{
+//    int m = tri.size();
+//    int n = tri[m - 1].size();
+//    vector<vector<int>> dp(m, vector<int>(n, 0x3f3f3f3f));
+//    dp[0][0] = tri[0][0];
+//    for (int i = 1; i < m; i++)
+//    {
+//        for (int j = 0; j < tri[i].size(); j++)
+//        {
+//            int x = i - 1; int y = j;
+//            if (tri[x].size() > j)
+//            {
+//                dp[i][j] = min(dp[i][j], dp[x][y] + tri[i][j]);
+//            }
+//            y--;
+//            if (y>=0&&tri[x].size() > y)
+//            {
+//                dp[i][j] = min(dp[i][j], dp[x][y] + tri[i][j]);
+//            }
+//        }
+//    }
+//    int ret = 0x3f3f3f3f;
+//    for (int i = 0; i < n; i++)
+//    {
+//        ret = min(ret, dp[m-1][i]);
+//    }
+//    return ret;
+//
+//}
+//
+//signed main()
+//{
+//    vector<vector<int>> vv = { {2},{3,4},{6,5,7},{4,1,8,3} };
+//    minimumTotal(vv);
+//    return 0;
+//}
 
 
 

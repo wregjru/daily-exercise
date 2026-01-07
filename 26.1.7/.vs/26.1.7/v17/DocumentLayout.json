@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\lianxi\\daily-exercise\\26.1.7\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\lianxi\\daily-exercise\\26.1.5\\26.1.5\\\u6E90.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1788A19B-D20A-41E9-A671-7A7B0B685DCC}|26.1.7\\26.1.7.vcxproj|E:\\lianxi\\daily-exercise\\26.1.7\\26.1.7\\\u6E90.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1788A19B-D20A-41E9-A671-7A7B0B685DCC}|26.1.7\\26.1.7.vcxproj|solutionrelative:26.1.7\\\u6E90.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "\u6E90.cpp",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\26.1.5\\26.1.5\\\u6E90.cpp",
+              "RelativeDocumentMoniker": "..\\26.1.5\\26.1.5\\\u6E90.cpp",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\26.1.5\\26.1.5\\\u6E90.cpp",
+              "RelativeToolTip": "..\\26.1.5\\26.1.5\\\u6E90.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-07T15:30:09.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "\u6E90.cpp",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\26.1.7\\26.1.7\\\u6E90.cpp",
+              "RelativeDocumentMoniker": "26.1.7\\\u6E90.cpp",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\26.1.7\\26.1.7\\\u6E90.cpp",
+              "RelativeToolTip": "26.1.7\\\u6E90.cpp",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-07T13:01:29.555Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

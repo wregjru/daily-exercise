@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\lianxi\\daily-exercise\\26.1.11\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5B895BF8-BBC9-420C-AD37-D906977CAEF6}|26.1.11\\26.1.11.vcxproj|E:\\lianxi\\daily-exercise\\26.1.11\\26.1.11\\\u6E90.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5B895BF8-BBC9-420C-AD37-D906977CAEF6}|26.1.11\\26.1.11.vcxproj|solutionrelative:26.1.11\\\u6E90.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B895BF8-BBC9-420C-AD37-D906977CAEF6}|26.1.11\\26.1.11.vcxproj|E:\\lianxi\\daily-exercise\\26.1.11\\26.1.11\\newhash.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5B895BF8-BBC9-420C-AD37-D906977CAEF6}|26.1.11\\26.1.11.vcxproj|solutionrelative:26.1.11\\newhash.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "newhash.cpp",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\26.1.11\\26.1.11\\newhash.cpp",
+              "RelativeDocumentMoniker": "26.1.11\\newhash.cpp",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\26.1.11\\26.1.11\\newhash.cpp",
+              "RelativeToolTip": "26.1.11\\newhash.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-11T10:53:48.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "\u6E90.cpp",
+              "DocumentMoniker": "E:\\lianxi\\daily-exercise\\26.1.11\\26.1.11\\\u6E90.cpp",
+              "RelativeDocumentMoniker": "26.1.11\\\u6E90.cpp",
+              "ToolTip": "E:\\lianxi\\daily-exercise\\26.1.11\\26.1.11\\\u6E90.cpp",
+              "RelativeToolTip": "26.1.11\\\u6E90.cpp",
+              "ViewState": "AgIAABAAAAAAAAAAAAApwBYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-11T08:55:31.953Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

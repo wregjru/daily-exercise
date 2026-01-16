@@ -1,0 +1,6 @@
+﻿  源.cpp
+E:\lianxi\daily-exercise\26.1.16\26.1.16\源.cpp(32,25): warning C4244: “初始化”: 从“double”转换到“__int64”，可能丢失数据
+E:\lianxi\daily-exercise\26.1.16\26.1.16\源.cpp(35,23): warning C4018: “<”: 有符号/无符号不匹配
+E:\lianxi\daily-exercise\26.1.16\26.1.16\源.cpp(44,23): warning C4018: “<”: 有符号/无符号不匹配
+E:\lianxi\daily-exercise\26.1.16\26.1.16\源.cpp(51,28): warning C4018: “<”: 有符号/无符号不匹配
+  26.1.16.vcxproj -> E:\lianxi\daily-exercise\26.1.16\x64\Debug\26.1.16.exe
